@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="levi2.0" board="Mojo" language="Verilog" version="3">
+  <files>
+    <src>shift_register.v</src>
+    <src>data_organize.v</src>
+    <src>top.v</src>
+    <src top="true">mojo_top.v</src>
+    <src>signal_shift.v</src>
+    <src>mySPI.v</src>
+    <constraint>mojo.ucf</constraint>
+  </files>
+</project>

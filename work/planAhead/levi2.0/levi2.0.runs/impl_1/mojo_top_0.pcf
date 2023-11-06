@@ -1,0 +1,69 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Oct 13 20:21:54 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "clk" LOCATE = SITE "P56" LEVEL 1;
+COMP "sClk" LOCATE = SITE "P51" LEVEL 1;
+COMP "data[0]" LOCATE = SITE "P127" LEVEL 1;
+COMP "data[1]" LOCATE = SITE "P132" LEVEL 1;
+COMP "data[2]" LOCATE = SITE "P134" LEVEL 1;
+COMP "data[3]" LOCATE = SITE "P138" LEVEL 1;
+COMP "data[4]" LOCATE = SITE "P140" LEVEL 1;
+COMP "data[5]" LOCATE = SITE "P142" LEVEL 1;
+COMP "data[6]" LOCATE = SITE "P144" LEVEL 1;
+COMP "data[7]" LOCATE = SITE "P2" LEVEL 1;
+COMP "clock" LOCATE = SITE "P123" LEVEL 1;
+COMP "latch" LOCATE = SITE "P124" LEVEL 1;
+COMP "serialIn" LOCATE = SITE "P10" LEVEL 1;
+TIMEGRP clk = BEL "t/a10/tmp0" BEL "t/a10/tmp1" BEL "t/a11/tmp0" BEL
+        "t/a11/tmp1" BEL "t/a12/tmp0" BEL "t/a12/tmp1" BEL "t/a13/tmp0" BEL
+        "t/a13/tmp1" BEL "t/a14/tmp0" BEL "t/a14/tmp1" BEL "t/a20/tmp0" BEL
+        "t/a20/tmp1" BEL "t/a15/tmp0" BEL "t/a15/tmp1" BEL "t/a21/tmp0" BEL
+        "t/a21/tmp1" BEL "t/a16/tmp0" BEL "t/a16/tmp1" BEL "t/a22/tmp0" BEL
+        "t/a22/tmp1" BEL "t/a17/tmp0" BEL "t/a17/tmp1" BEL "t/a23/tmp0" BEL
+        "t/a23/tmp1" BEL "t/b/counter_5" BEL "t/b/counter_4" BEL
+        "t/b/counter_3" BEL "t/b/counter_2" BEL "t/b/counter_1" BEL
+        "t/b/counter_0" BEL "t/b/oData_7" BEL "t/b/oData_6" BEL "t/b/oData_5"
+        BEL "t/b/oData_4" BEL "t/b/oData_3" BEL "t/b/oData_2" BEL
+        "t/b/oData_1" BEL "t/b/oData_0" BEL "t/b/oClock" BEL "t/b/oLatch" BEL
+        "t/a18/tmp0" BEL "t/a18/tmp1" BEL "t/a24/tmp0" BEL "t/a24/tmp1" BEL
+        "t/a19/tmp0" BEL "t/a19/tmp1" BEL "t/a30/tmp0" BEL "t/a30/tmp1" BEL
+        "t/a25/tmp0" BEL "t/a25/tmp1" BEL "t/a31/tmp0" BEL "t/a31/tmp1" BEL
+        "t/a26/tmp0" BEL "t/a26/tmp1" BEL "t/a32/tmp0" BEL "t/a32/tmp1" BEL
+        "t/a7/tmp0" BEL "t/a7/tmp1" BEL "t/a27/tmp0" BEL "t/a27/tmp1" BEL
+        "t/a33/tmp0" BEL "t/a33/tmp1" BEL "t/a8/tmp0" BEL "t/a8/tmp1" BEL
+        "t/a28/tmp0" BEL "t/a28/tmp1" BEL "t/a34/tmp0" BEL "t/a34/tmp1" BEL
+        "t/a9/tmp0" BEL "t/a9/tmp1" BEL "t/a29/tmp0" BEL "t/a29/tmp1" BEL
+        "t/a40/tmp0" BEL "t/a40/tmp1" BEL "t/a35/tmp0" BEL "t/a35/tmp1" BEL
+        "t/a41/tmp0" BEL "t/a41/tmp1" BEL "t/a36/tmp0" BEL "t/a36/tmp1" BEL
+        "t/a42/tmp0" BEL "t/a42/tmp1" BEL "t/a37/tmp0" BEL "t/a37/tmp1" BEL
+        "t/a43/tmp0" BEL "t/a43/tmp1" BEL "t/a38/tmp0" BEL "t/a38/tmp1" BEL
+        "t/a44/tmp0" BEL "t/a44/tmp1" BEL "t/a39/tmp0" BEL "t/a39/tmp1" BEL
+        "t/a50/tmp0" BEL "t/a50/tmp1" BEL "t/a45/tmp0" BEL "t/a45/tmp1" BEL
+        "t/a51/tmp0" BEL "t/a51/tmp1" BEL "t/a46/tmp0" BEL "t/a46/tmp1" BEL
+        "t/a52/tmp0" BEL "t/a52/tmp1" BEL "t/a47/tmp0" BEL "t/a47/tmp1" BEL
+        "t/a53/tmp0" BEL "t/a53/tmp1" BEL "t/a48/tmp0" BEL "t/a48/tmp1" BEL
+        "t/a54/tmp0" BEL "t/a54/tmp1" BEL "t/a49/tmp0" BEL "t/a49/tmp1" BEL
+        "t/a60/tmp0" BEL "t/a60/tmp1" BEL "t/a55/tmp0" BEL "t/a55/tmp1" BEL
+        "t/a61/tmp0" BEL "t/a61/tmp1" BEL "t/a56/tmp0" BEL "t/a56/tmp1" BEL
+        "t/a62/tmp0" BEL "t/a62/tmp1" BEL "t/a57/tmp0" BEL "t/a57/tmp1" BEL
+        "t/a63/tmp0" BEL "t/a63/tmp1" BEL "t/a58/tmp0" BEL "t/a58/tmp1" BEL
+        "t/a64/tmp0" BEL "t/a64/tmp1" BEL "t/a64/counter_10" BEL
+        "t/a64/counter_9" BEL "t/a64/counter_8" BEL "t/a64/counter_7" BEL
+        "t/a64/counter_6" BEL "t/a64/counter_5" BEL "t/a64/counter_4" BEL
+        "t/a64/counter_2" BEL "t/a64/counter_1" BEL "t/a64/counter_0" BEL
+        "t/a64/counter_1_1" BEL "t/a64/counter_2_1" BEL "t/a64/counter_3" BEL
+        "t/a64/counter_3_1" BEL "t/a64/counter_7_1" BEL "t/a64/counter_5_1"
+        BEL "t/a64/counter_5_2" BEL "t/a64/counter_5_3" BEL
+        "t/a64/counter_5_4" BEL "t/a64/counter_5_5" BEL "t/a64/counter_5_6"
+        BEL "t/a64/counter_5_7" BEL "t/a64/counter_4_1" BEL
+        "t/a64/counter_10_1" BEL "t/a64/counter_0_1" BEL "t/a59/tmp0" BEL
+        "t/a59/tmp1" BEL "t/a1/tmp0" BEL "t/a1/tmp1" BEL "t/a2/tmp0" BEL
+        "t/a2/tmp1" BEL "t/a3/tmp0" BEL "t/a3/tmp1" BEL "t/a4/tmp0" BEL
+        "t/a4/tmp1" BEL "t/a5/tmp0" BEL "t/a5/tmp1" BEL "t/a6/tmp0" BEL
+        "t/a6/tmp1" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH 50%;
+SCHEMATIC END;
+
