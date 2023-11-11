@@ -2,6 +2,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <cmath>
+#include <stdint.h>
 #include <vector>
 
 using namespace std;
@@ -119,3 +120,91 @@ int main(int argc, char** argv)
     }
     return 0;
 }
+
+void calc_vortex_sig(point_t piezo_xyz[], uint8_t helicity, double phase[]) {
+    uint16_t i;
+    for (i = 0; i < N; i++) {
+        phase[i] = (double)helicity * atan2(piezo_xyz[i].y, piezo_xyz[i].x);
+    }
+}
+
+void calc_twin_sig(point_t piezo_xyz[], double angle, double phase[]) {
+    double a;
+    uint16_t i;
+    angle = fmod(angle, 2 * M_PI);
+    for (i = 0; i < N; i++) {
+        a = atan2(piezo_xyz[i].y, piezo_xyz[i].x);
+        a = fmod(angle + a + 4 * M_PI, 2 * M_PI);
+        if ((a > M_PI_2) && (a <= 3 * M_PI_2)) phase[i] = M_PI_2;
+        else phase[i] = -M_PI_2;
+    }
+}
+
+void calc_bottle_sig(point_t piezo_xyz[], double radius, double phase[]) {
+    uint16_t i;
+    for (i = 0; i < N; i++) {
+        if (sqrt(pow(piezo_xyz[i].x, 2) + pow(piezo_xyz[i].y, 2)) < radius) phase[i] = 0;
+        else phase[i] = M_PI;
+    }
+}
+
+void calc_focus(point_t piezo_xyz[], point_t p, double phase[]) {
+    double r;
+    uint16_t i;
+    for (i = 0; i < N; i++) {
+        r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
+        phase[i] = -WAVE_K * r;
+    }
+}
+
+void set_trap_vortex(point_t p, uint8_t helicity) {
+
+    uint16_t i;
+    double focus[N], phase[N];
+
+    if (helicity != vortex_helicity) {
+        vortex_helicity = helicity;
+        calc_vortex_sig(piezo_xyz, vortex_helicity, vortex_sig);
+    }
+
+    calc_focus(piezo_xyz, p, focus);
+
+    for (i = 0; i < N; i++) phase[i] = vortex_sig[i] + focus[i];
+    set_piezo_phase(REGISTER_A, phase);
+    for (i = 0; i < N; i++) phase[i] = 2 * M_PI - vortex_sig[i] + focus[i];
+    set_piezo_phase(REGISTER_B, phase);
+}
+
+void set_trap_twin(point_t p, double angle) {
+
+    uint16_t i;
+    double focus[N], phase[N];
+
+    if (angle != twin_angle) {
+        twin_angle = angle;
+        calc_twin_sig(piezo_xyz, twin_angle, twin_sig);
+    }
+
+    calc_focus(piezo_xyz, p, focus);
+
+    for (i = 0; i < N; i++) phase[i] = twin_sig[i] + focus[i];
+    set_piezo_phase(REGISTER_A, phase);
+}
+
+void set_trap_bottle(point_t p, double radius) {
+
+    uint16_t i;
+    double focus[N], phase[N];
+
+    if (radius != bottle_radius) {
+        bottle_radius = radius;
+        calc_bottle_sig(piezo_xyz, bottle_radius, bottle_sig);
+    }
+
+    calc_focus(piezo_xyz, p, focus);
+
+    for (i = 0; i < N; i++) phase[i] = bottle_sig[i] + focus[i];
+    set_piezo_phase(REGISTER_A, phase);
+}
+
+
