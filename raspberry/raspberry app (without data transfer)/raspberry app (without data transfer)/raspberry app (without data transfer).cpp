@@ -101,6 +101,16 @@ void calc_focus(transduster piezo_xyz[], point p, double phase[]) {
     }
 }
 
+double normalizePhase(double phase)
+{
+    while (-2 > phase && phase < 2)
+    {
+        phase = fmod(phase, 2);
+    }
+    if (phase < 0) phase = 2 + phase;
+
+    return phase;
+}
 
 void set_trap_twin(point p, double angle, transduster piezo_xyz[]) {
 
@@ -121,7 +131,7 @@ void set_trap_twin(point p, double angle, transduster piezo_xyz[]) {
 
     for (i = 0; i < N; i++)
     {
-        cout << fmod(fmod(fmod(phase[i], 2 * M_PI), 2), 2) << ", ";
+        cout << normalizePhase(fmod(phase[i], 2 * M_PI)) << ", ";
         if (i % 8 == 7) cout << "\n";
     }
     //set_piezo_phase(REGISTER_A, phase);
