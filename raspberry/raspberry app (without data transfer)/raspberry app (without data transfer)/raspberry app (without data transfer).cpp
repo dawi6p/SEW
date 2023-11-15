@@ -64,72 +64,97 @@ public:
         this->z = z;
         this->y = y;
     }
+    point() {};
 };
 
-void calc_vortex_sig(transduster piezo_xyz[], uint8_t helicity, double phase[]) {
-    uint16_t i;
-    for (i = 0; i < N; i++) {
-        phase[i] = (double)helicity * atan2(piezo_xyz[i].y, piezo_xyz[i].x);
-    }
-}
 
-void calc_twin_sig(transduster piezo_xyz[], double angle, double phase[]) {
-    double a;
-    uint16_t i;
-    angle = fmod(angle, 2 * M_PI);
-    for (i = 0; i < N; i++) {
-        a = atan2(piezo_xyz[i].y, piezo_xyz[i].x);
-        a = fmod(angle + a + 4 * M_PI, 2 * M_PI);
-        if ((a > M_PI_2) && (a <= 3 * M_PI_2)) phase[i] = M_PI_2;
-        else phase[i] = -M_PI_2;
-    }
-}
-
-void calc_bottle_sig(transduster piezo_xyz[], double radius, double phase[]) {
-    uint16_t i;
-    for (i = 0; i < N; i++) {
-        if (sqrt(pow(piezo_xyz[i].x, 2) + pow(piezo_xyz[i].y, 2)) < radius) phase[i] = 0;
-        else phase[i] = M_PI;
-    }
-}
-
-void calc_focus(transduster piezo_xyz[], point p, double phase[]) {
-    double r;
-    uint16_t i;
-    for (i = 0; i < N; i++) {
-        r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
-        phase[i] = -WAVE_K * r;
-    }
-}
-
-double normalizePhase(double phase)
+class transArray
 {
-    while (-2 > phase && phase < 2)
+private:
+    double twin_angle = NULL;
+
+public:
+    transduster piezo_xyz[N];
+    point p;
+
+    transArray(transduster _piezo_xyz[], point p)
     {
-        phase = fmod(phase, 2);
+        for (int i = 0; i < N; i++) this->piezo_xyz[i] = _piezo_xyz[i];
+        this->p = p;
+        twin_angle = NULL;
     }
-    if (phase < 0) phase = 2 + phase;
+    transArray() {};
 
-    return phase;
-}
 
-void set_trap_twin(point p, double angle, transduster piezo_xyz[]) {
+    void calc_vortex_sig(uint8_t helicity, double phase[]) {
+        uint16_t i;
+        for (i = 0; i < N; i++) {
+            phase[i] = (double)helicity * atan2(piezo_xyz[i].y, piezo_xyz[i].x);
+        }
+    }
 
-    uint16_t i;
-    double focus[N], phase[N], twin_sig[N];
+    void calc_twin_sig(double angle, double phase[]) {
+        double a;
+        uint16_t i;
+        angle = fmod(angle, 2 * M_PI);
+        for (i = 0; i < N; i++) {
+            a = atan2(piezo_xyz[i].y, piezo_xyz[i].x);
+            a = fmod(angle + a + 4 * M_PI, 2 * M_PI);
+            if ((a > M_PI_2) && (a <= 3 * M_PI_2)) phase[i] = M_PI_2;
+            else phase[i] = -M_PI_2;
+        }
+    }
 
-    /*if (angle != twin_angle) {
-        twin_angle = angle;
+    void calc_bottle_sig(double radius, double phase[]) {
+        uint16_t i;
+        for (i = 0; i < N; i++) {
+            if (sqrt(pow(piezo_xyz[i].x, 2) + pow(piezo_xyz[i].y, 2)) < radius) phase[i] = 0;
+            else phase[i] = M_PI;
+        }
+    }
 
-        calc_twin_sig(piezo_xyz, twin_angle, twin_sig);
-    }*/
-    calc_twin_sig(piezo_xyz, twin_angle, twin_sig);
+    void calc_focus(double phase[]) {
+        double r;
+        uint16_t i;
+        for (i = 0; i < N; i++) {
+            r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
+            phase[i] = -WAVE_K * r;
+        }
+    }
 
-    calc_focus(piezo_xyz, p, focus);
+    double normalizePhase(double phase)
+    {
+        while (-2 > phase && phase < 2)
+        {
+            phase = fmod(phase, 2);
+        }
+        if (phase < 0) phase = 2 + phase;
 
-    for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(twin_sig[i] + focus[i],2));
-    //set_piezo_phase(REGISTER_A, phase);
-}
+        return phase;
+    }
+
+    void set_trap_twin(double angle) {
+
+        uint16_t i;
+        double focus[N], phase[N], twin_sig[N];
+
+        /*if (angle != twin_angle) {
+            twin_angle = angle;
+
+            calc_twin_sig(twin_angle, twin_sig);
+        }*/
+        calc_twin_sig(twin_angle, twin_sig);
+
+        calc_focus(focus);
+
+        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(twin_sig[i] + focus[i], 2));
+
+        //set_piezo_phase(REGISTER_A, phase);
+    }
+
+
+};
+
 
 
 
@@ -152,11 +177,13 @@ int main()
 
     }
 
-    set_trap_twin(*new point(0, 0, 251), 0, piezo_xyz);
+    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 251));
+
+    squareArray.set_trap_twin(0);
 
     for (int i = 0; i < N; i++)
     {
-        cout << piezo_xyz[i].phase << ", ";
+        cout << squareArray.piezo_xyz[i].phase << ", ";
         if (i % 8 == 7) cout << "\n";
     }
 }
