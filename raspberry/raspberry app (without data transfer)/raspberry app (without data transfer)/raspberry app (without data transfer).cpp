@@ -49,6 +49,13 @@ public:
         this->y = y;
     }
     transduster() {}
+
+    int map_phase_on_int(int n)
+    {
+        double tmp = phase * n;
+        if (tmp > n) tmp = tmp - n * 2;
+        return lround(tmp);
+    }
 };
 
 class point
@@ -183,7 +190,7 @@ int main()
 
     for (int i = 0; i < N; i++)
     {
-        cout << squareArray.piezo_xyz[i].phase << ", ";
+        cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
         if (i % 8 == 7) cout << "\n";
     }
 }
