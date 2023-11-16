@@ -9,22 +9,10 @@
 #include <stdint.h>
 #include <vector>
 
-/*#define DEFAULT_VORTEX_HELICITY    1
-#define DEFAULT_TWIN_ANGLE         0 // rad
-#define DEFAULT_BOTTLE_RADIUS     10 // mm
-#define DEFAULT_N                200 // 40 kHz / (200+200) = 100 Hz
-
-
-#define WAVE_C  343 // m/s
-#define WAVE_K  (2*M_PI*PIEZO_FREQ/(1000*WAVE_C)) // 1/mm
-
-#define N       PIEZO_COUNT*/
-
-
-
 using namespace std;
 
 const int PIEZO_FREQ = 40000;
+// dokladniejsza wartosc predkosci dzwieku? nwm czy jest potrzebne
 const double WAVE_C = 343;
 const double WAVE_K = (2 * M_PI * PIEZO_FREQ / (1000 * WAVE_C));
 const double twin_angle = 0;
@@ -124,6 +112,7 @@ public:
         double r;
         uint16_t i;
         for (i = 0; i < N; i++) {
+            //to do: trzeba wziasc pod uwage srednice glosnika, obecnie jes traktowane jako punkt
             r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
             phase[i] = -WAVE_K * r;
         }
@@ -145,6 +134,7 @@ public:
         uint16_t i;
         double focus[N], phase[N], twin_sig[N];
 
+        // nie trzeba za karzdym razaem liczyc twin sig wystarczy przy zmianie kata
         /*if (angle != twin_angle) {
             twin_angle = angle;
 
@@ -156,10 +146,8 @@ public:
 
         for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(twin_sig[i] + focus[i], 2));
 
-        //set_piezo_phase(REGISTER_A, phase);
+        //zaladowac fazy na fpga
     }
-
-
 };
 
 
@@ -188,9 +176,61 @@ int main()
 
     squareArray.set_trap_twin(0);
 
-    for (int i = 0; i < N; i++)
+    
+
+    char e = ' ';
+    while (e != 'E')
     {
-        cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
-        if (i % 8 == 7) cout << "\n";
+        //to DO: zaimplementowac inne rodzaje pulapek,
+        //       umorzliwic zmiane inkrementu,
+        system("cls");
+        for (int i = 0; i < N; i++)
+        {
+            cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
+            if (i % 8 == 7) cout << "\n";
+        }
+        cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\n";
+        cin >> e;
+
+        switch (e)
+        {
+        case 'w':
+            squareArray.p.x += 1;
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 's':
+            squareArray.p.x -= 1;
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 'd':
+            squareArray.p.y += 1;
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 'a':
+            squareArray.p.y -= 1;
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 'r':
+            squareArray.p.z += 1;
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 'f':
+            squareArray.p.z -= 1;
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 'E':
+            return 0;
+
+        default:
+            break;
+        }
     }
+
+    return 0;
 }
