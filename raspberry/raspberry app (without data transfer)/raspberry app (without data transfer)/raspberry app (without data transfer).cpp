@@ -129,6 +129,15 @@ public:
         return phase;
     }
 
+    void mySPI(short data, short nBits)
+    {
+    }
+
+    void sendDataPacket()
+    {
+        for (int i = 0; i < N; i++) mySPI(piezo_xyz[i].map_phase_on_int(625), 11);
+    }
+
     void set_trap_twin(double angle) {
 
         uint16_t i;
@@ -146,7 +155,7 @@ public:
 
         for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(twin_sig[i] + focus[i], 2));
 
-        //zaladowac fazy na fpga
+        sendDataPacket();
     }
 };
 
@@ -175,8 +184,6 @@ int main()
     transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 251));
 
     squareArray.set_trap_twin(0);
-
-    
 
     char e = ' ';
     while (e != 'E')
