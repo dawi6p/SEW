@@ -1,3 +1,3 @@
 ﻿  raspberry app (without data transfer).cpp
-C:\Users\Nkiogotonieobchodzi\Desktop\levi2.0\raspberry\raspberry app (without data transfer)\raspberry app (without data transfer)\raspberry app (without data transfer).cpp(135,26): warning C4101: "phase": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Nkiogotonieobchodzi\Desktop\levi2.0\raspberry\raspberry app (without data transfer)\raspberry app (without data transfer)\raspberry app (without data transfer).cpp(155,26): warning C4101: "phase": lokalna zmienna, do której nie istnieje odwołanie
   raspberry app (without data transfer).vcxproj -> C:\Users\Nkiogotonieobchodzi\Desktop\levi2.0\raspberry\raspberry app (without data transfer)\x64\Debug\raspberry app (without data transfer).exe

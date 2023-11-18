@@ -108,13 +108,24 @@ public:
         }
     }
 
+    double distance(int i)
+    {
+        double d3 = abs(p.z - piezo_xyz[i].z);
+        //double d22 = pow((p.y - piezo_xyz[i].y), 2);
+        //double d12 = pow((p.x - piezo_xyz[i].x), 2);
+        double dFromCenter = sqrt(pow((p.y - piezo_xyz[i].y), 2) + pow((p.x - piezo_xyz[i].x), 2)) - piezo_xyz[i].diameter / 2;
+
+        if (dFromCenter < 0) return d3;
+        return sqrt(pow(dFromCenter, 2) + pow(d3, 2));
+    }
+
     void calc_focus(double phase[]) {
-        double r;
+        //double r;
         uint16_t i;
         for (i = 0; i < N; i++) {
             //to do: trzeba wziasc pod uwage srednice glosnika, obecnie jes traktowane jako punkt
-            r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
-            phase[i] = -WAVE_K * r;
+            //r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
+            phase[i] = -WAVE_K * distance(i);
         }
     }
 
@@ -193,7 +204,7 @@ int main()
         system("cls");
         for (int i = 0; i < N; i++)
         {
-            cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
+            cout << squareArray.piezo_xyz[i].phase << ", ";
             if (i % 8 == 7) cout << "\n";
         }
         cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\n";
