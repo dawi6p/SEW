@@ -153,7 +153,7 @@ public:
     void set_trap_twin(double angle) {
 
         uint16_t i;
-        double focus[N], phase[N], twin_sig[N];
+        double focus[N], twin_sig[N];
 
         // nie trzeba za karzdym razaem liczyc twin sig wystarczy przy zmianie kata
         /*if (angle != twin_angle) {
@@ -183,7 +183,7 @@ public:
 
         calc_focus(focus);
 
-        for (i = 0; i < N; i++) phase[i] = bottle_sig[i] + focus[i];
+        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(bottle_sig[i] + focus[i], 2));
 
         sendDataPacket();
     }
