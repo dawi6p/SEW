@@ -67,6 +67,7 @@ class transArray
 {
 private:
     double twin_angle = NULL;
+    double bottle_radius = 1.5;
 
 public:
     transduster piezo_xyz[N];
@@ -168,6 +169,25 @@ public:
 
         sendDataPacket();
     }
+
+    void set_trap_bottle(double radius) {
+
+        uint16_t i;
+        double focus[N], phase[N], bottle_sig[N];
+
+        /*if (radius != bottle_radius) {
+            bottle_radius = radius;
+            calc_bottle_sig(piezo_xyz, bottle_radius, bottle_sig);
+        }*/
+        calc_bottle_sig(bottle_radius, bottle_sig);
+
+        calc_focus(focus);
+
+        for (i = 0; i < N; i++) phase[i] = bottle_sig[i] + focus[i];
+
+        sendDataPacket();
+    }
+
 };
 
 
