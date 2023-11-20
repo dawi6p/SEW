@@ -190,9 +190,13 @@ public:
 
 };
 
-
-
-
+double changeInc(double ic)
+{
+    system("cls");
+    cout << "obecny inkrement: " << ic << "[mm]\nWprowadz nowy:\n";
+    cin >> ic;
+    return abs(ic);
+}
 
 int main()
 {
@@ -216,6 +220,8 @@ int main()
 
     squareArray.set_trap_twin(0);
 
+    double ic = 1;
+
     char e = ' ';
     while (e != 'E')
     {
@@ -227,39 +233,43 @@ int main()
             cout << squareArray.piezo_xyz[i].phase << ", ";
             if (i % 8 == 7) cout << "\n";
         }
-        cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\n";
+        cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\nZ - zmien inkrement\n";
         cin >> e;
 
         switch (e)
         {
         case 'w':
-            squareArray.p.x += 1;
+            squareArray.p.x += ic;
             squareArray.set_trap_twin(0);
             break;
 
         case 's':
-            squareArray.p.x -= 1;
+            squareArray.p.x -= ic;
             squareArray.set_trap_twin(0);
             break;
 
         case 'd':
-            squareArray.p.y += 1;
+            squareArray.p.y += ic;
             squareArray.set_trap_twin(0);
             break;
 
         case 'a':
-            squareArray.p.y -= 1;
+            squareArray.p.y -= ic;
             squareArray.set_trap_twin(0);
             break;
 
         case 'r':
-            squareArray.p.z += 1;
+            squareArray.p.z += ic;
             squareArray.set_trap_twin(0);
             break;
 
         case 'f':
-            squareArray.p.z -= 1;
+            squareArray.p.z -= ic;
             squareArray.set_trap_twin(0);
+            break;
+
+        case 'Z':
+            ic = changeInc(ic);
             break;
 
         case 'E':
