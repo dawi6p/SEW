@@ -8,6 +8,7 @@
 #include <cmath>
 #include <stdint.h>
 #include <vector>
+#include <cstring>
 
 using namespace std;
 
@@ -198,6 +199,17 @@ double changeInc(double ic)
     return abs(ic);
 }
 
+char changeTrap(char trap)
+{
+    system("cls");
+    char temp = trap;
+    cout << "f-Focus, t-Twin, b-botle, v-votex\nobecna pulapka: " << trap << "\nWprowadz nowy:\n";
+    cin >> trap;
+    trap = tolower(trap);
+    if (trap != 'f' && trap != 't' && trap != 'b' && trap != 'v') trap = temp;
+    return trap;
+}
+
 int main()
 {
     transduster piezo_xyz[N];
@@ -223,6 +235,7 @@ int main()
     double ic = 1;
 
     char e = ' ';
+    char trap = 't';
     while (e != 'E')
     {
         //to DO: zaimplementowac inne rodzaje pulapek,
@@ -233,49 +246,70 @@ int main()
             cout << squareArray.piezo_xyz[i].phase << ", ";
             if (i % 8 == 7) cout << "\n";
         }
-        cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\nZ - zmien inkrement\n";
+        cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\nZ - zmien inkrement\nP - zmien pulapke\n";
         cin >> e;
 
         switch (e)
         {
         case 'w':
             squareArray.p.x += ic;
-            squareArray.set_trap_twin(0);
             break;
 
         case 's':
             squareArray.p.x -= ic;
-            squareArray.set_trap_twin(0);
             break;
 
         case 'd':
             squareArray.p.y += ic;
-            squareArray.set_trap_twin(0);
             break;
 
         case 'a':
             squareArray.p.y -= ic;
-            squareArray.set_trap_twin(0);
             break;
 
         case 'r':
             squareArray.p.z += ic;
-            squareArray.set_trap_twin(0);
             break;
 
         case 'f':
             squareArray.p.z -= ic;
-            squareArray.set_trap_twin(0);
             break;
 
         case 'Z':
             ic = changeInc(ic);
             break;
 
+        case 'P':
+            trap = changeTrap(trap);
+            break;
+
         case 'E':
             return 0;
 
         default:
+            break;
+        }
+
+        switch (trap)
+        {
+        case 't':
+            squareArray.set_trap_twin(0);
+            break;
+
+        case 'b':
+            squareArray.set_trap_bottle(1);
+            break;
+
+        case 'f':
+            //squareArray.set_focus(0);
+            break;
+
+        case 'v':
+            //squareArray.set_trap_vortex(0);
+            break;
+
+        default:
+            //squareArray.set_focus(0);
             break;
         }
     }
