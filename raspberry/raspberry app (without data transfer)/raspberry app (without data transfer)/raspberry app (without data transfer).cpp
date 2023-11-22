@@ -67,8 +67,10 @@ public:
 class transArray
 {
 private:
-    double twin_angle = NULL;
+    double twin_angle = 0;
     double bottle_radius = 1.5;
+    double twinMask[N];
+    double bottleMask[N];
 
 public:
     transduster piezo_xyz[N];
@@ -78,7 +80,9 @@ public:
     {
         for (int i = 0; i < N; i++) this->piezo_xyz[i] = _piezo_xyz[i];
         this->p = p;
-        twin_angle = NULL;
+        twin_angle = 0;
+        calc_twin_sig(twin_angle);
+        calc_bottle_sig(bottle_radius);
     }
     transArray() {};
 
@@ -90,23 +94,23 @@ public:
         }
     }
 
-    void calc_twin_sig(double angle, double phase[]) {
+    void calc_twin_sig(double angle) {
         double a;
         uint16_t i;
         angle = fmod(angle, 2 * M_PI);
         for (i = 0; i < N; i++) {
             a = atan2(piezo_xyz[i].y, piezo_xyz[i].x);
             a = fmod(angle + a + 4 * M_PI, 2 * M_PI);
-            if ((a > M_PI_2) && (a <= 3 * M_PI_2)) phase[i] = M_PI_2;
-            else phase[i] = -M_PI_2;
+            if ((a > M_PI_2) && (a <= 3 * M_PI_2)) twinMask[i] = M_PI_2;
+            else twinMask[i] = -M_PI_2;
         }
     }
 
-    void calc_bottle_sig(double radius, double phase[]) {
+    void calc_bottle_sig(double radius) {
         uint16_t i;
         for (i = 0; i < N; i++) {
-            if (sqrt(pow(piezo_xyz[i].x, 2) + pow(piezo_xyz[i].y, 2)) < radius) phase[i] = 0;
-            else phase[i] = M_PI;
+            if (sqrt(pow(piezo_xyz[i].x, 2) + pow(piezo_xyz[i].y, 2)) < radius) bottleMask[i] = 0;
+            else bottleMask[i] = M_PI;
         }
     }
 
@@ -154,19 +158,19 @@ public:
     void set_trap_twin(double angle) {
 
         uint16_t i;
-        double focus[N], twin_sig[N];
+        double focus[N];
 
         // nie trzeba za karzdym razaem liczyc twin sig wystarczy przy zmianie kata
-        /*if (angle != twin_angle) {
+        if (angle != twin_angle) {
             twin_angle = angle;
 
-            calc_twin_sig(twin_angle, twin_sig);
-        }*/
-        calc_twin_sig(twin_angle, twin_sig);
+            calc_twin_sig(twin_angle);
+        }
+        //calc_twin_sig(twin_angle);
 
         calc_focus(focus);
 
-        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(twin_sig[i] + focus[i], 2));
+        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(twinMask[i] + focus[i], 2));
 
         sendDataPacket();
     }
@@ -174,17 +178,16 @@ public:
     void set_trap_bottle(double radius) {
 
         uint16_t i;
-        double focus[N], phase[N], bottle_sig[N];
+        double focus[N];
 
-        /*if (radius != bottle_radius) {
+        if (radius != bottle_radius) {
             bottle_radius = radius;
-            calc_bottle_sig(piezo_xyz, bottle_radius, bottle_sig);
-        }*/
-        calc_bottle_sig(bottle_radius, bottle_sig);
+            calc_bottle_sig(bottle_radius);
+        }
 
         calc_focus(focus);
 
-        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(bottle_sig[i] + focus[i], 2));
+        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(bottleMask[i] + focus[i], 2));
 
         sendDataPacket();
     }
