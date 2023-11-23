@@ -71,13 +71,22 @@ private:
     double bottle_radius = 1.5;
     double twinMask[N];
     double bottleMask[N];
+    int data_pin;
+    int clk_pin;
 
 public:
     transduster piezo_xyz[N];
     point p;
 
-    transArray(transduster _piezo_xyz[], point p)
+    transArray(transduster _piezo_xyz[], point p, int dataPin, int clkPin)
     {
+        data_pin = dataPin;
+        clk_pin = clkPin;
+        //wiringPiSetup();
+        //pinMode(dataPin, OUTPUT);
+        //pinMode(clkPin, OUTPUT);
+        //digitalWrite(dataPin, 1);
+        //digitalWrite(clkPin, 1);
         for (int i = 0; i < N; i++) this->piezo_xyz[i] = _piezo_xyz[i];
         this->p = p;
         twin_angle = 0;
@@ -148,6 +157,19 @@ public:
 
     void mySPI(short data, short nBits)
     {
+        short mask = 1;
+
+        for (int i = 0; i < nBits; i++)
+        {
+            //digitalWrite(data_pin, data & mask);
+            //digitalWrite(clk_pin, 1);
+            //usleep(75);
+            //digitalWrite(clk_pin, 0);
+            //usleep(75);
+            mask *= 2;
+        }
+
+        //digitalWrite(clk_pin, 1);
     }
 
     void sendDataPacket()
@@ -231,7 +253,7 @@ int main()
 
     }
 
-    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 251));
+    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 251), 0, 2);
 
     squareArray.set_trap_twin(0);
 
