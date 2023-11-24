@@ -268,7 +268,7 @@ int main()
         system("cls");
         for (int i = 0; i < N; i++)
         {
-            cout << squareArray.piezo_xyz[i].phase << ", ";
+            cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
             if (i % 8 == 7) cout << "\n";
         }
         cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\nZ - zmien inkrement\nP - zmien pulapke\n";
