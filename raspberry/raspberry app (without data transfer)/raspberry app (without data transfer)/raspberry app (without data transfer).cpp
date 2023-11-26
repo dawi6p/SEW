@@ -161,6 +161,7 @@ public:
 
         for (int i = 0; i < nBits; i++)
         {
+            //cout << (data & mask) <<endl;
             //digitalWrite(data_pin, data & mask);
             //digitalWrite(clk_pin, 1);
             //usleep(75);
@@ -168,7 +169,7 @@ public:
             //usleep(75);
             mask *= 2;
         }
-
+        cout << endl;
         //digitalWrite(clk_pin, 1);
     }
 
@@ -265,7 +266,7 @@ int main()
     {
         //to DO: zaimplementowac inne rodzaje pulapek,
         //       umorzliwic zmiane inkrementu,
-        system("cls");
+        //system("cls");
         for (int i = 0; i < N; i++)
         {
             cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
