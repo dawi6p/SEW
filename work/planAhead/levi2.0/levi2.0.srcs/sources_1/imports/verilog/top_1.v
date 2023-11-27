@@ -147,7 +147,7 @@ module top_1 (
   
   shift_register_4 b(clk, top, latch, clock, data);
   
-  data_organize_5 o(clk, dataIn, dataInChange,
+  data_organize_5 o(dataIn, dataInChange,
                   signal1,
                   signal2,
                   signal3,

@@ -1,5 +1,4 @@
 module data_organize_5 (
-    input clk,  // clock
     input [10:0] data,
     input [5:0]dataChange,
     output [10:0]signal1,

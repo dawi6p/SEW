@@ -24,13 +24,13 @@ const int N = 64;
 class transduster
 {
 public:
-    int diameter;
+    double diameter;
     double x;
     double z;
     double y;
     double phase;
 
-    transduster(int d, double x, double y, double z)
+    transduster(double d, double x, double y, double z)
     {
         this->diameter = d;
         this->x = x;
@@ -68,7 +68,7 @@ class transArray
 {
 private:
     double twin_angle = 0;
-    double bottle_radius = 1.5;
+    double bottle_radius = 3;
     double twinMask[N];
     double bottleMask[N];
     int data_pin;
@@ -135,7 +135,7 @@ public:
     }
 
     void calc_focus(double phase[]) {
-        //double r;
+        double r;
         uint16_t i;
         for (i = 0; i < N; i++) {
             //to do: trzeba wziasc pod uwage srednice glosnika, obecnie jes traktowane jako punkt
@@ -169,7 +169,7 @@ public:
             //usleep(75);
             mask *= 2;
         }
-        cout << endl;
+        //cout << endl;
         //digitalWrite(clk_pin, 1);
     }
 
@@ -242,7 +242,7 @@ int main()
     int x = 0, y = 0;
     for (int i = 0; i < N; i++)
     {
-        piezo_xyz[i] = *new transduster(16, 1 * (x - 4) + 16 * (x - 4) + 8.5, 1 * (y - 4) + 16 * (y - 4) + 8.5, 0);
+        piezo_xyz[i] = *new transduster(8.5, 1 * (x - 4) + 16 * (x - 4) + 8.5, 1 * (y - 4) + 16 * (y - 4) + 8.5, 0);
         //cout << "x: " << piezo_xyz[i].x << "y: " << piezo_xyz[i].y << ", ";
         y++;
         if (i % 8 == 7)
@@ -254,7 +254,7 @@ int main()
 
     }
 
-    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 251), 0, 2);
+    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 25), 0, 2);
 
     squareArray.set_trap_twin(0);
 
@@ -266,12 +266,13 @@ int main()
     {
         //to DO: zaimplementowac inne rodzaje pulapek,
         //       umorzliwic zmiane inkrementu,
-        //system("cls");
+        system("cls");
         for (int i = 0; i < N; i++)
         {
-            cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
+            cout << squareArray.piezo_xyz[i].phase << ", ";
             if (i % 8 == 7) cout << "\n";
         }
+        cout << "\nx: " << squareArray.p.x << ",y: " << squareArray.p.y << ",z: " << squareArray.p.z << endl;
         cout << "\n\n\nw - X+, d - Y+, r - Z+\ns - X-, a - Y-, f - Z-\nE - koniec programu\nZ - zmien inkrement\nP - zmien pulapke\n";
         cin >> e;
 
@@ -323,7 +324,7 @@ int main()
             break;
 
         case 'b':
-            squareArray.set_trap_bottle(1);
+            squareArray.set_trap_bottle(3);
             break;
 
         case 'f':

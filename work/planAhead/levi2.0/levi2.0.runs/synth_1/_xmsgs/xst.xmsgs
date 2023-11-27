@@ -17,199 +17,196 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/shift_register_4.v" Line 359: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 138: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 137: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 141: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 140: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 144: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 143: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 147: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 146: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 150: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 149: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 153: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 152: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 156: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 155: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 159: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 158: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 162: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 161: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 165: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 164: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 168: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 167: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 171: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 170: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 174: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 173: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 177: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 176: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 180: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 179: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 183: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 182: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 186: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 185: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 189: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 188: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 192: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 191: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 195: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 194: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 198: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 197: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 201: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 200: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 204: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 203: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 207: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 206: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 210: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 209: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 213: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 212: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 216: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 215: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 219: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 218: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 222: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 221: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 225: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 224: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 228: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 227: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 231: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 230: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 234: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 233: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 237: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 236: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 240: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 239: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 243: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 242: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 246: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 245: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 249: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 248: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 252: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 251: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 255: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 254: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 258: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 257: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 261: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 260: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 264: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 263: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 267: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 266: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 270: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 269: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 273: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 272: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 276: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 275: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 279: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 278: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 282: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 281: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 285: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 284: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 288: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 287: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 291: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 290: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 294: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 293: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 297: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 296: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 300: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 299: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 303: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 302: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 306: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 305: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 309: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 308: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 312: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 311: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 315: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 314: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 318: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 317: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 321: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 320: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 324: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 323: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 327: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-</msg>
-
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 326: Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">data1&lt;9&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.

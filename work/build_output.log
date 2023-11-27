@@ -26,10 +26,10 @@ source {C:\Users\Nkiogotonieobchodzi\Desktop\levi2.0\work\project.tcl}
 # set_property steps.par.args.mt on [get_runs impl_1]
 # update_compile_order -fileset sources_1
 # launch_runs -runs synth_1
-[Sun Nov 26 15:48:16 2023] Launched synth_1...
+[Sun Nov 26 18:47:14 2023] Launched synth_1...
 Run output will be captured here: C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.runs/synth_1/runme.log
 # wait_on_run synth_1
-[Sun Nov 26 15:48:16 2023] Waiting for synth_1 to finish...
+[Sun Nov 26 18:47:14 2023] Waiting for synth_1 to finish...
 
 *** Running xst
     with args -ifn "mojo_top_0.xst" -ofn "mojo_top_0.srp" -intstyle ise
@@ -71,70 +71,70 @@ Elaborating module <shift_register_4>.
 WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/shift_register_4.v" Line 359: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <data_organize_5>.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 138: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 141: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 144: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 147: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 150: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 153: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 156: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 159: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 162: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 165: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 168: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 171: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 174: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 177: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 180: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 183: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 186: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 189: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 192: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 195: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 198: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 201: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 204: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 207: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 210: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 213: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 216: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 219: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 222: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 225: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 228: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 231: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 234: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 237: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 240: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 243: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 246: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 249: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 252: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 255: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 258: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 261: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 264: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 267: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 270: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 273: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 276: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 279: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 282: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 285: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 288: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 291: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 294: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 297: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 300: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 303: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 306: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 309: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 312: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 315: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 318: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 321: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 324: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 327: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 137: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 140: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 143: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 146: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 149: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 152: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 155: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 158: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 161: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 164: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 167: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 170: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 173: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 176: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 179: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 182: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 185: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 188: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 191: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 194: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 197: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 200: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 203: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 206: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 209: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 212: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 215: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 218: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 221: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 224: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 227: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 230: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 233: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 236: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 239: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 242: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 245: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 248: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 251: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 254: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 257: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 260: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 263: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 266: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 269: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 272: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 275: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 278: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 281: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 284: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 287: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 290: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 293: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 296: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 299: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 302: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 305: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 308: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 311: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 314: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 317: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 320: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 323: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v" Line 326: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -213,7 +213,6 @@ Unit <shift_register_4> synthesized.
 
 Synthesizing Unit <data_organize_5>.
     Related source file is "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v".
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 1-bit latch for signal <data1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1012,9 +1011,9 @@ Optimizing unit <signal_shift_2> ...
 
 Optimizing unit <shift_register_4> ...
 
-Optimizing unit <data_organize_5> ...
-
 Optimizing unit <mySPI_3> ...
+
+Optimizing unit <data_organize_5> ...
 INFO:Xst:2261 - The FF/Latch <t/a64/counter_10> in Unit <mojo_top_0> is equivalent to the following 63 FFs/Latches, which will be removed : <t/a63/counter_10> <t/a62/counter_10> <t/a61/counter_10> <t/a60/counter_10> <t/a59/counter_10> <t/a58/counter_10> <t/a57/counter_10> <t/a56/counter_10> <t/a55/counter_10> <t/a54/counter_10> <t/a53/counter_10> <t/a52/counter_10> <t/a51/counter_10> <t/a50/counter_10> <t/a49/counter_10> <t/a48/counter_10> <t/a47/counter_10> <t/a46/counter_10> <t/a45/counter_10> <t/a44/counter_10> <t/a43/counter_10> <t/a42/counter_10> <t/a41/counter_10> <t/a40/counter_10> <t/a39/counter_10> <t/a38/counter_10> <t/a37/counter_10> <t/a36/counter_10> <t/a35/counter_10> <t/a34/counter_10> <t/a33/counter_10> <t/a32/counter_10> <t/a31/counter_10> <t/a30/counter_10> <t/a29/counter_10> <t/a28/counter_10> <t/a27/counter_10> <t/a26/counter_10> <t/a25/counter_10> <t/a24/counter_10> <t/a23/counter_10> <t/a22/counter_10> <t/a21/counter_10> <t/a20/counter_10> <t/a19/counter_10> <t/a18/counter_10>
    <t/a17/counter_10> <t/a16/counter_10> <t/a15/counter_10> <t/a14/counter_10> <t/a13/counter_10> <t/a12/counter_10> <t/a11/counter_10> <t/a10/counter_10> <t/a9/counter_10> <t/a8/counter_10> <t/a7/counter_10> <t/a6/counter_10> <t/a5/counter_10> <t/a4/counter_10> <t/a3/counter_10> <t/a2/counter_10> <t/a1/counter_10> 
 INFO:Xst:2261 - The FF/Latch <t/a64/counter_11> in Unit <mojo_top_0> is equivalent to the following 63 FFs/Latches, which will be removed : <t/a63/counter_11> <t/a62/counter_11> <t/a61/counter_11> <t/a60/counter_11> <t/a59/counter_11> <t/a58/counter_11> <t/a57/counter_11> <t/a56/counter_11> <t/a55/counter_11> <t/a54/counter_11> <t/a53/counter_11> <t/a52/counter_11> <t/a51/counter_11> <t/a50/counter_11> <t/a49/counter_11> <t/a48/counter_11> <t/a47/counter_11> <t/a46/counter_11> <t/a45/counter_11> <t/a44/counter_11> <t/a43/counter_11> <t/a42/counter_11> <t/a41/counter_11> <t/a40/counter_11> <t/a39/counter_11> <t/a38/counter_11> <t/a37/counter_11> <t/a36/counter_11> <t/a35/counter_11> <t/a34/counter_11> <t/a33/counter_11> <t/a32/counter_11> <t/a31/counter_11> <t/a30/counter_11> <t/a29/counter_11> <t/a28/counter_11> <t/a27/counter_11> <t/a26/counter_11> <t/a25/counter_11> <t/a24/counter_11> <t/a23/counter_11> <t/a22/counter_11> <t/a21/counter_11> <t/a20/counter_11> <t/a19/counter_11> <t/a18/counter_11>
@@ -1165,8 +1164,8 @@ Speed Grade: -2
    Maximum combinational path delay: No path found
 
 =========================================================================
-[Sun Nov 26 15:48:36 2023] synth_1 finished
-wait_on_run: Time (s): elapsed = 00:00:20 . Memory (MB): peak = 221.668 ; gain = 0.000
+[Sun Nov 26 18:47:24 2023] synth_1 finished
+wait_on_run: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 221.758 ; gain = 0.000
 # launch_runs -runs impl_1
 Release 14.7 - ngc2edif P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -1372,7 +1371,7 @@ WARNING:NetListWriters:306 - Signal bus Madd_delay[10]_GND_3_o_add_3_OUT_cy<9 :
    missing bus signals.
   finished :Prep
 Writing EDIF netlist file mojo_top_0.edif ...
-ngc2edif: Total memory usage is 82992 kilobytes
+ngc2edif: Total memory usage is 83120 kilobytes
 
 Parsing EDIF File [C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.data/cache/mojo_top_0_ngc_zx.edif]
 Finished Parsing EDIF File [C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.data/cache/mojo_top_0_ngc_zx.edif]
@@ -1394,11 +1393,11 @@ CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'test<2>' [C:/Us
 CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'test<2>' [C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/constrs_1/imports/constraint/mojo.ucf:22]
 Finished Parsing UCF File [C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/constrs_1/imports/constraint/mojo.ucf]
 INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
-[Sun Nov 26 15:48:41 2023] Launched impl_1...
+[Sun Nov 26 18:47:30 2023] Launched impl_1...
 Run output will be captured here: C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.runs/impl_1/runme.log
-launch_runs: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 307.203 ; gain = 85.535
+launch_runs: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 307.105 ; gain = 85.348
 # wait_on_run impl_1
-[Sun Nov 26 15:48:41 2023] Waiting for impl_1 to finish...
+[Sun Nov 26 18:47:30 2023] Waiting for impl_1 to finish...
 
 *** Running ngdbuild
     with args -intstyle ise -p xc6slx9tqg144-2 -dd _ngo -uc "mojo_top_0.ucf" "mojo_top_0.edf"
@@ -1435,7 +1434,7 @@ NGDBUILD Design Results Summary:
   Number of warnings:   0
 
 Writing NGD file "mojo_top_0.ngd" ...
-Total REAL time to NGDBUILD completion:  7 sec
+Total REAL time to NGDBUILD completion:  5 sec
 Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "mojo_top_0.bld"...
@@ -1456,53 +1455,53 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 6 secs 
+Total REAL time at the beginning of Placer: 3 secs 
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4ebeb5cd) REAL time: 7 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:4ebeb5cd) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:4ebeb5cd) REAL time: 7 secs 
+Phase 2.7  Design Feasibility Check (Checksum:4ebeb5cd) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4ebeb5cd) REAL time: 7 secs 
+Phase 3.31  Local Placement Optimization (Checksum:4ebeb5cd) REAL time: 3 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:c2df36cb) REAL time: 8 secs 
+(Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 5.36  Local Placement Optimization (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 7.3  Local Placement Optimization (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 8.5  Local Placement Optimization (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 9.8  Global Placement
 .............................................
 ..................................................................
-Phase 9.8  Global Placement (Checksum:f30e8829) REAL time: 10 secs 
+Phase 9.8  Global Placement (Checksum:f30e8829) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:f30e8829) REAL time: 10 secs 
+Phase 10.5  Local Placement Optimization (Checksum:f30e8829) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:f99f0e99) REAL time: 11 secs 
+Phase 11.18  Placement Optimization (Checksum:f99f0e99) REAL time: 7 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:f99f0e99) REAL time: 11 secs 
+Phase 12.5  Local Placement Optimization (Checksum:f99f0e99) REAL time: 7 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:f99f0e99) REAL time: 11 secs 
+Phase 13.34  Placement Validation (Checksum:f99f0e99) REAL time: 7 secs 
 
-Total REAL time to Placer completion: 11 secs 
+Total REAL time to Placer completion: 7 secs 
 Total CPU  time to Placer completion: 7 secs 
 Running post-placement packing...
 Writing output files...
@@ -1581,8 +1580,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.92
 
-Peak Memory Usage:  299 MB
-Total REAL time to MAP completion:  13 secs 
+Peak Memory Usage:  298 MB
+Total REAL time to MAP completion:  8 secs 
 Total CPU time to MAP completion (all processors):   8 secs 
 
 Mapping completed.
@@ -1690,7 +1689,7 @@ Phase  2  : 15672 unrouted;      REAL time: 2 secs
 
 Phase  3  : 8626 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 8626 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  4  : 8626 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
@@ -1704,8 +1703,8 @@ Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
-Total REAL time to Router completion: 9 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Total REAL time to Router completion: 8 secs 
 Total CPU time to Router completion (all processors): 13 secs 
 
 Generating "PAR" statistics.
@@ -1943,7 +1942,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
+Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion (all processors): 13 secs 
 
 Peak Memory Usage:  291 MB
@@ -1969,7 +1968,7 @@ Loading device for application Rf_Device from file '6slx9.nph' in environment
 D:\xilinx2\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 
-Analysis completed Sun Nov 26 15:49:18 2023
+Analysis completed Sun Nov 26 18:47:57 2023
 --------------------------------------------------------------------------------
 
 Generating Report ...
@@ -1987,13 +1986,13 @@ WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or
 Loading device for application Rf_Device from file '6slx9.nph' in environment D:\xilinx2\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 Successfully converted design 'mojo_top_0_routed.ncd' to 'mojo_top_0_routed.xdl'.
-[Sun Nov 26 15:49:22 2023] impl_1 finished
-wait_on_run: Time (s): elapsed = 00:00:40 . Memory (MB): peak = 307.203 ; gain = 0.000
+[Sun Nov 26 18:48:00 2023] impl_1 finished
+wait_on_run: Time (s): elapsed = 00:00:30 . Memory (MB): peak = 307.105 ; gain = 0.000
 # launch_runs impl_1 -to_step Bitgen
-[Sun Nov 26 15:49:22 2023] Launched impl_1...
+[Sun Nov 26 18:48:01 2023] Launched impl_1...
 Run output will be captured here: C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.runs/impl_1/runme.log
 # wait_on_run impl_1
-[Sun Nov 26 15:49:22 2023] Waiting for impl_1 to finish...
+[Sun Nov 26 18:48:01 2023] Waiting for impl_1 to finish...
 
 *** Running ngdbuild
     with args -intstyle ise -p xc6slx9tqg144-2 -dd _ngo -uc "mojo_top_0.ucf" "mojo_top_0.edf"
@@ -2030,7 +2029,7 @@ NGDBUILD Design Results Summary:
   Number of warnings:   0
 
 Writing NGD file "mojo_top_0.ngd" ...
-Total REAL time to NGDBUILD completion:  7 sec
+Total REAL time to NGDBUILD completion:  5 sec
 Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "mojo_top_0.bld"...
@@ -2051,53 +2050,53 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 6 secs 
+Total REAL time at the beginning of Placer: 3 secs 
 Total CPU  time at the beginning of Placer: 3 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:4ebeb5cd) REAL time: 7 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:4ebeb5cd) REAL time: 3 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:4ebeb5cd) REAL time: 7 secs 
+Phase 2.7  Design Feasibility Check (Checksum:4ebeb5cd) REAL time: 3 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:4ebeb5cd) REAL time: 7 secs 
+Phase 3.31  Local Placement Optimization (Checksum:4ebeb5cd) REAL time: 3 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:c2df36cb) REAL time: 8 secs 
+(Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 5.36  Local Placement Optimization (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 7.3  Local Placement Optimization (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:c2df36cb) REAL time: 8 secs 
+Phase 8.5  Local Placement Optimization (Checksum:c2df36cb) REAL time: 4 secs 
 
 Phase 9.8  Global Placement
 .............................................
 ..................................................................
-Phase 9.8  Global Placement (Checksum:f30e8829) REAL time: 10 secs 
+Phase 9.8  Global Placement (Checksum:f30e8829) REAL time: 5 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:f30e8829) REAL time: 10 secs 
+Phase 10.5  Local Placement Optimization (Checksum:f30e8829) REAL time: 5 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:f99f0e99) REAL time: 11 secs 
+Phase 11.18  Placement Optimization (Checksum:f99f0e99) REAL time: 7 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:f99f0e99) REAL time: 11 secs 
+Phase 12.5  Local Placement Optimization (Checksum:f99f0e99) REAL time: 7 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:f99f0e99) REAL time: 11 secs 
+Phase 13.34  Placement Validation (Checksum:f99f0e99) REAL time: 7 secs 
 
-Total REAL time to Placer completion: 11 secs 
+Total REAL time to Placer completion: 7 secs 
 Total CPU  time to Placer completion: 7 secs 
 Running post-placement packing...
 Writing output files...
@@ -2176,8 +2175,8 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                3.92
 
-Peak Memory Usage:  299 MB
-Total REAL time to MAP completion:  13 secs 
+Peak Memory Usage:  298 MB
+Total REAL time to MAP completion:  8 secs 
 Total CPU time to MAP completion (all processors):   8 secs 
 
 Mapping completed.
@@ -2285,7 +2284,7 @@ Phase  2  : 15672 unrouted;      REAL time: 2 secs
 
 Phase  3  : 8626 unrouted;      REAL time: 5 secs 
 
-Phase  4  : 8626 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+Phase  4  : 8626 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
@@ -2299,8 +2298,8 @@ Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL 
 
 Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 9 secs 
-Total REAL time to Router completion: 9 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Total REAL time to Router completion: 8 secs 
 Total CPU time to Router completion (all processors): 13 secs 
 
 Generating "PAR" statistics.
@@ -2538,7 +2537,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
+Total REAL time to PAR completion: 8 secs 
 Total CPU time to PAR completion (all processors): 13 secs 
 
 Peak Memory Usage:  291 MB
@@ -2564,7 +2563,7 @@ Loading device for application Rf_Device from file '6slx9.nph' in environment
 D:\xilinx2\14.7\ISE_DS\ISE\.
    "mojo_top_0" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -2
 
-Analysis completed Sun Nov 26 15:49:18 2023
+Analysis completed Sun Nov 26 18:47:57 2023
 --------------------------------------------------------------------------------
 
 Generating Report ...
@@ -2842,9 +2841,9 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    t/o/GND_7_o_GND_7_o_equal_9_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-[Sun Nov 26 15:49:37 2023] impl_1 finished
-wait_on_run: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 307.203 ; gain = 0.000
-INFO: [Common 17-206] Exiting PlanAhead at Sun Nov 26 15:49:37 2023...
+[Sun Nov 26 18:48:11 2023] impl_1 finished
+wait_on_run: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 307.105 ; gain = 0.000
+INFO: [Common 17-206] Exiting PlanAhead at Sun Nov 26 18:48:11 2023...
 INFO: [Common 17-83] Releasing license: PlanAhead
 
 Finished building project.

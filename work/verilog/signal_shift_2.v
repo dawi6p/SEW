@@ -36,9 +36,9 @@ module signal_shift_2 (
      if(delay + TICK_WAIT3 == counter) tmp1 <= ~tmp1;
      if(TICK_WAIT3 == counter)         counter <= 0;*/
      if(TICK_WAIT2 == counter)         begin 
-      tmp0 <= 0;
-      tmp1 <= 1;
-      counter <= 0;
+       tmp0 <= 0;
+       tmp1 <= 1;
+       counter <= 0;
      end
    end
 
