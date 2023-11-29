@@ -1,6 +1,4 @@
-﻿
-
-#define _USE_MATH_DEFINES
+﻿#define _USE_MATH_DEFINES
 #include <iostream>
 //#include <wiringPi.h>
 #include <iostream>
@@ -14,7 +12,7 @@ using namespace std;
 
 const int PIEZO_FREQ = 40000;
 // dokladniejsza wartosc predkosci dzwieku? nwm czy jest potrzebne
-const double WAVE_C = 343;
+const double WAVE_C = 346;
 const double WAVE_K = (2 * M_PI * PIEZO_FREQ / (1000 * WAVE_C));
 const double twin_angle = 0;
 
@@ -126,8 +124,6 @@ public:
     double distance(int i)
     {
         double d3 = abs(p.z - piezo_xyz[i].z);
-        //double d22 = pow((p.y - piezo_xyz[i].y), 2);
-        //double d12 = pow((p.x - piezo_xyz[i].x), 2);
         double dFromCenter = sqrt(pow((p.y - piezo_xyz[i].y), 2) + pow((p.x - piezo_xyz[i].x), 2)) - piezo_xyz[i].diameter / 2;
 
         if (dFromCenter < 0) return d3;
@@ -139,10 +135,20 @@ public:
         uint16_t i;
         for (i = 0; i < N; i++) {
             //to do: trzeba wziasc pod uwage srednice glosnika, obecnie jes traktowane jako punkt
-            //r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
-            phase[i] = -WAVE_K * distance(i);
+            r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
+            phase[i] = -WAVE_K * r;//distance(i);
         }
     }
+
+    /*void calc_focus(double phase[]) {
+        double r;
+        for (int i = 0; i < N; i++) {
+            r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
+            double waveL = WAVE_C / PIEZO_FREQ;
+            double targetPhase = (1.0f - fmod((r / waveL), 1) * 2.0f * M_PI);
+            phase[i] = (targetPhase / M_PI);
+        }
+    }*/
 
     double normalizePhase(double phase)
     {
@@ -151,6 +157,7 @@ public:
             phase = fmod(phase, 2);
         }
         if (phase < 0) phase = 2 + phase;
+
 
         return phase;
     }
@@ -215,6 +222,17 @@ public:
         sendDataPacket();
     }
 
+    void set_focus() {
+
+        uint16_t i;
+        double focus[N];
+
+        calc_focus(focus);
+
+        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(focus[i], 2));
+
+        sendDataPacket();
+    }
 };
 
 double changeInc(double ic)
@@ -254,14 +272,14 @@ int main()
 
     }
 
-    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 25), 0, 2);
+    transArray squareArray = *new transArray(piezo_xyz, *new point(0, 0, 0), 0, 2);
 
-    squareArray.set_trap_twin(0);
+    squareArray.set_focus();
 
     double ic = 1;
 
     char e = ' ';
-    char trap = 't';
+    char trap = ' ';
     while (e != 'E')
     {
         //to DO: zaimplementowac inne rodzaje pulapek,
@@ -328,7 +346,7 @@ int main()
             break;
 
         case 'f':
-            //squareArray.set_focus(0);
+            squareArray.set_focus();
             break;
 
         case 'v':
@@ -336,7 +354,7 @@ int main()
             break;
 
         default:
-            //squareArray.set_focus(0);
+            squareArray.set_focus();
             break;
         }
     }
