@@ -135,8 +135,8 @@ public:
         uint16_t i;
         for (i = 0; i < N; i++) {
             //to do: trzeba wziasc pod uwage srednice glosnika, obecnie jes traktowane jako punkt
-            r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
-            phase[i] = -WAVE_K * r;//distance(i);
+            //r = sqrt(pow((p.x - piezo_xyz[i].x), 2) + pow((p.y - piezo_xyz[i].y), 2) + pow((p.z - piezo_xyz[i].z), 2));
+            phase[i] = -WAVE_K * distance(i);
         }
     }
 
@@ -152,12 +152,14 @@ public:
 
     double normalizePhase(double phase)
     {
-        while (-2 > phase && phase < 2)
+        //phase /= M_PI;
+        phase = fmod(phase, M_PI);
+        /*while (-2 > phase && phase < 2)
         {
             phase = fmod(phase, 2);
         }
-        if (phase < 0) phase = 2 + phase;
-
+        if (phase < 0) phase = 2 + phase;*/
+        
 
         return phase;
     }
@@ -229,7 +231,7 @@ public:
 
         calc_focus(focus);
 
-        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(fmod(focus[i], 2));
+        for (i = 0; i < N; i++) piezo_xyz[i].phase = normalizePhase(focus[i]);
 
         sendDataPacket();
     }

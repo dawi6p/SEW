@@ -43,3 +43,4 @@ NET "serialIn" LOC = P10;
 NET "serialIn" IOSTANDARD = LVTTL;
 NET "sClk" LOC = P51;
 NET "sClk" IOSTANDARD = LVTTL;
+

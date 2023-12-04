@@ -1,4 +1,5 @@
 module data_organize (
+    input clk,
     input [10:0] data,
     input [5:0]dataChange,
     output [10:0]signal1,
@@ -132,7 +133,7 @@ module data_organize (
   reg [10:0]data64;
 
   /* Sequential Logic */
-  always @(dataChange) begin
+  always @(posedge clk) begin
     if(dataChange == 0) begin
       data1 <= data;
     end

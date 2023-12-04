@@ -7,72 +7,6 @@ module top_1 (
     output [7:0]data
   );
   wire[63:0] top;
-  wire[63:0] bot;
-  
-  wire [10:0]s1gnal1;
-  wire [10:0]s1gnal2;
-  wire [10:0]s1gnal3;
-  wire [10:0]s1gnal4;
-  wire [10:0]s1gnal5;
-  wire [10:0]s1gnal6;
-  wire [10:0]s1gnal7;
-  wire [10:0]s1gnal8;
-  wire [10:0]s1gnal9;
-  wire [10:0]s1gnal10;
-  wire [10:0]s1gnal11;
-  wire [10:0]s1gnal12;
-  wire [10:0]s1gnal13;
-  wire [10:0]s1gnal14;
-  wire [10:0]s1gnal15;
-  wire [10:0]s1gnal16;
-  wire [10:0]s1gnal17;
-  wire [10:0]s1gnal18;
-  wire [10:0]s1gnal19;
-  wire [10:0]s1gnal20;
-  wire [10:0]s1gnal21;
-  wire [10:0]s1gnal22;
-  wire [10:0]s1gnal23;
-  wire [10:0]s1gnal24;
-  wire [10:0]s1gnal25;
-  wire [10:0]s1gnal26;
-  wire [10:0]s1gnal27;
-  wire [10:0]s1gnal28;
-  wire [10:0]s1gnal29;
-  wire [10:0]s1gnal30;
-  wire [10:0]s1gnal31;
-  wire [10:0]s1gnal32;
-  wire [10:0]s1gnal33;
-  wire [10:0]s1gnal34;
-  wire [10:0]s1gnal35;
-  wire [10:0]s1gnal36;
-  wire [10:0]s1gnal37;
-  wire [10:0]s1gnal38;
-  wire [10:0]s1gnal39;
-  wire [10:0]s1gnal40;
-  wire [10:0]s1gnal41;
-  wire [10:0]s1gnal42;
-  wire [10:0]s1gnal43;
-  wire [10:0]s1gnal44;
-  wire [10:0]s1gnal45;
-  wire [10:0]s1gnal46;
-  wire [10:0]s1gnal47;
-  wire [10:0]s1gnal48;
-  wire [10:0]s1gnal49;
-  wire [10:0]s1gnal50;
-  wire [10:0]s1gnal51;
-  wire [10:0]s1gnal52;
-  wire [10:0]s1gnal53;
-  wire [10:0]s1gnal54;
-  wire [10:0]s1gnal55;
-  wire [10:0]s1gnal56;
-  wire [10:0]s1gnal57;
-  wire [10:0]s1gnal58;
-  wire [10:0]s1gnal59;
-  wire [10:0]s1gnal60;
-  wire [10:0]s1gnal61;
-  wire [10:0]s1gnal62;
-  wire [10:0]s1gnal63;
-  wire [10:0]s1gnal64;
   
   wire [10:0]signal1;
   wire [10:0]signal2;
@@ -209,76 +143,11 @@ module top_1 (
   signal_shift_2 a63 (clk, signal63, top[62]);
   signal_shift_2 a64 (clk, signal64, top[63]);
   
-  signal_shift_2 b1  (clk, s1gnal1,  bot[0]);
-  signal_shift_2 b2  (clk, s1gnal2,  bot[1]);
-  signal_shift_2 b3  (clk, s1gnal3,  bot[2]);
-  signal_shift_2 b4  (clk, s1gnal4,  bot[3]);
-  signal_shift_2 b5  (clk, s1gnal5,  bot[4]);
-  signal_shift_2 b6  (clk, s1gnal6,  bot[5]);
-  signal_shift_2 b7  (clk, s1gnal7,  bot[6]);
-  signal_shift_2 b8  (clk, s1gnal8,  bot[7]);
-  signal_shift_2 b9  (clk, s1gnal9,  bot[8]);
-  signal_shift_2 b10 (clk, s1gnal10, bot[9]);
-  signal_shift_2 b11 (clk, s1gnal11, bot[10]);
-  signal_shift_2 b12 (clk, s1gnal12, bot[11]);
-  signal_shift_2 b13 (clk, s1gnal13, bot[12]);
-  signal_shift_2 b14 (clk, s1gnal14, bot[13]);
-  signal_shift_2 b15 (clk, s1gnal15, bot[14]);
-  signal_shift_2 b16 (clk, s1gnal16, bot[15]);
-  signal_shift_2 b17 (clk, s1gnal17, bot[16]);
-  signal_shift_2 b18 (clk, s1gnal18, bot[17]);
-  signal_shift_2 b19 (clk, s1gnal19, bot[18]);
-  signal_shift_2 b20 (clk, s1gnal20, bot[19]);
-  signal_shift_2 b21 (clk, s1gnal21, bot[20]);
-  signal_shift_2 b22 (clk, s1gnal22, bot[21]);
-  signal_shift_2 b23 (clk, s1gnal23, bot[22]);
-  signal_shift_2 b24 (clk, s1gnal24, bot[23]);
-  signal_shift_2 b25 (clk, s1gnal25, bot[24]);
-  signal_shift_2 b26 (clk, s1gnal26, bot[25]);
-  signal_shift_2 b27 (clk, s1gnal27, bot[26]);
-  signal_shift_2 b28 (clk, s1gnal28, bot[27]);
-  signal_shift_2 b29 (clk, s1gnal29, bot[28]);
-  signal_shift_2 b30 (clk, s1gnal30, bot[29]);
-  signal_shift_2 b31 (clk, s1gnal31, bot[30]);
-  signal_shift_2 b32 (clk, s1gnal32, bot[31]);
-  signal_shift_2 b33 (clk, s1gnal33, bot[32]);
-  signal_shift_2 b34 (clk, s1gnal34, bot[33]);
-  signal_shift_2 b35 (clk, s1gnal35, bot[34]);
-  signal_shift_2 b36 (clk, s1gnal36, bot[35]);
-  signal_shift_2 b37 (clk, s1gnal37, bot[36]);
-  signal_shift_2 b38 (clk, s1gnal38, bot[37]);
-  signal_shift_2 b39 (clk, s1gnal39, bot[38]);
-  signal_shift_2 b40 (clk, s1gnal40, bot[39]);
-  signal_shift_2 b41 (clk, s1gnal41, bot[40]);
-  signal_shift_2 b42 (clk, s1gnal42, bot[41]);
-  signal_shift_2 b43 (clk, s1gnal43, bot[42]);
-  signal_shift_2 b44 (clk, s1gnal44, bot[43]);
-  signal_shift_2 b45 (clk, s1gnal45, bot[44]);
-  signal_shift_2 b46 (clk, s1gnal46, bot[45]);
-  signal_shift_2 b47 (clk, s1gnal47, bot[46]);
-  signal_shift_2 b48 (clk, s1gnal48, bot[47]);
-  signal_shift_2 b49 (clk, s1gnal49, bot[48]);
-  signal_shift_2 b50 (clk, s1gnal50, bot[49]);
-  signal_shift_2 b51 (clk, s1gnal51, bot[50]);
-  signal_shift_2 b52 (clk, s1gnal52, bot[51]);
-  signal_shift_2 b53 (clk, s1gnal53, bot[52]);
-  signal_shift_2 b54 (clk, s1gnal54, bot[53]);
-  signal_shift_2 b55 (clk, s1gnal55, bot[54]);
-  signal_shift_2 b56 (clk, s1gnal56, bot[55]);
-  signal_shift_2 b57 (clk, s1gnal57, bot[56]);
-  signal_shift_2 b58 (clk, s1gnal58, bot[57]);
-  signal_shift_2 b59 (clk, s1gnal59, bot[58]);
-  signal_shift_2 b60 (clk, s1gnal60, bot[59]);
-  signal_shift_2 b61 (clk, s1gnal61, bot[60]);
-  signal_shift_2 b62 (clk, s1gnal62, bot[61]);
-  signal_shift_2 b63 (clk, s1gnal63, bot[62]);
-  signal_shift_2 b64 (clk, s1gnal64, bot[63]);
-  
   mySPI_3 spi (sClk, serialIn, dataIn, dataInChange);
   
   shift_register_4 b(clk, top, latch, clock, data);
   
-  data_organize_5 o(dataIn, dataInChange,
+  data_organize_5 o(clk, dataIn, dataInChange,
                   signal1,
                   signal2,
                   signal3,
@@ -342,7 +211,7 @@ module top_1 (
                   signal61,
                   signal62,
                   signal63,
-                  signal64); 
+                  signal64);
                   
            
   

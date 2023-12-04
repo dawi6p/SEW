@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-CK54GHQ::  Wed Nov 29 13:04:39 2023
+DESKTOP-CK54GHQ::  Mon Dec 04 19:01:14 2023
 
 par -intstyle pa -w -mt on mojo_top_0.ncd mojo_top_0_routed.ncd 
 
@@ -21,30 +21,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   887 out of  11,440    7%
-    Number used as Flip Flops:                 183
-    Number used as Latches:                    704
+  Number of Slice Registers:                 1,627 out of  11,440   14%
+    Number used as Flip Flops:               1,627
+    Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,895 out of   5,720   50%
-    Number used as logic:                    2,894 out of   5,720   50%
-      Number using O6 output only:           2,295
-      Number using O5 output only:              10
-      Number using O5 and O6:                  589
+  Number of Slice LUTs:                      3,832 out of   5,720   66%
+    Number used as logic:                    3,756 out of   5,720   65%
+      Number using O6 output only:           2,912
+      Number using O5 output only:             640
+      Number using O5 and O6:                  204
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:      1
-      Number with same-slice register load:      0
-      Number with same-slice carry load:         1
+    Number used exclusively as route-thrus:     76
+      Number with same-slice register load:     12
+      Number with same-slice carry load:        64
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,023 out of   1,430   71%
-  Number of MUXCYs used:                       524 out of   2,860   18%
-  Number of LUT Flip Flop pairs used:        3,099
-    Number with an unused Flip Flop:         2,216 out of   3,099   71%
-    Number with an unused LUT:                 204 out of   3,099    6%
-    Number of fully used LUT-FF pairs:         679 out of   3,099   21%
+  Number of occupied Slices:                 1,332 out of   1,430   93%
+  Number of MUXCYs used:                     1,280 out of   2,860   44%
+  Number of LUT Flip Flop pairs used:        4,006
+    Number with an unused Flip Flop:         2,399 out of   4,006   59%
+    Number with an unused LUT:                 174 out of   4,006    4%
+    Number of fully used LUT-FF pairs:       1,433 out of   4,006   35%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -96,29 +96,29 @@ PAR will use up to 2 processors
 Starting Multi-threaded Router
 
 
-Phase  1  : 16371 unrouted;      REAL time: 2 secs 
+Phase  1  : 18785 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 15672 unrouted;      REAL time: 2 secs 
+Phase  2  : 17408 unrouted;      REAL time: 2 secs 
 
-Phase  3  : 8626 unrouted;      REAL time: 5 secs 
+Phase  3  : 8180 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 8626 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 5 secs 
+Phase  4  : 8180 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 4 secs 
 
 Updating file: mojo_top_0_routed.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 7 secs 
 
 Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 8 secs 
 Total REAL time to Router completion: 8 secs 
-Total CPU time to Router completion (all processors): 13 secs 
+Total CPU time to Router completion (all processors): 11 secs 
 
 Generating "PAR" statistics.
 
@@ -131,199 +131,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |          sClk_BUFGP | BUFGMUX_X2Y12| No   |   14 |  0.655     |  2.079      |
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGMUX_X2Y11| No   |   84 |  0.687     |  2.078      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_11_o |         Local|      |    3 |  0.234     |  1.038      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_13_o |         Local|      |    3 |  0.434     |  1.247      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_21_o |         Local|      |    3 |  0.127     |  0.712      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_23_o |         Local|      |    3 |  0.186     |  0.788      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_31_o |         Local|      |    3 |  0.350     |  0.710      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_15_o |         Local|      |    3 |  0.428     |  0.802      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_17_o |         Local|      |    3 |  0.123     |  0.706      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_25_o |         Local|      |    3 |  0.982     |  1.528      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_33_o |         Local|      |    3 |  0.431     |  1.212      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_41_o |         Local|      |    3 |  0.043     |  0.589      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_19_o |         Local|      |    3 |  0.447     |  0.783      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_27_o |         Local|      |    3 |  0.452     |  0.810      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_35_o |         Local|      |    3 |  0.321     |  0.879      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_43_o |         Local|      |    3 |  0.597     |  0.933      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_51_o |         Local|      |    3 |  0.226     |  0.776      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_29_o |         Local|      |    3 |  0.434     |  1.427      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_37_o |         Local|      |    3 |  0.628     |  1.150      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_45_o |         Local|      |    3 |  0.440     |  0.960      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_53_o |         Local|      |    3 |  0.033     |  0.583      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_61_o |         Local|      |    3 |  0.436     |  0.921      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_101_o |         Local|      |    3 |  0.201     |  0.912      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_39_o |         Local|      |    3 |  0.034     |  0.584      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_47_o |         Local|      |    3 |  0.211     |  0.763      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_55_o |         Local|      |    3 |  0.194     |  1.128      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_63_o |         Local|      |    3 |  0.602     |  1.180      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_71_o |         Local|      |    3 |  0.321     |  1.069      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_103_o |         Local|      |    3 |  0.232     |  0.836      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_111_o |         Local|      |    3 |  0.536     |  1.353      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_73_o |         Local|      |    3 |  0.381     |  0.900      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_81_o |         Local|      |    3 |  0.093     |  0.578      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_49_o |         Local|      |    3 |  0.221     |  0.602      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_57_o |         Local|      |    3 |  0.234     |  1.623      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_65_o |         Local|      |    3 |  0.407     |  0.775      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_105_o |         Local|      |    3 |  0.335     |  1.070      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_113_o |         Local|      |    3 |  0.321     |  0.886      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_121_o |         Local|      |    3 |  0.194     |  0.790      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_59_o |         Local|      |    3 |  0.557     |  1.141      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_67_o |         Local|      |    3 |  0.009     |  0.794      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_75_o |         Local|      |    3 |  0.057     |  0.583      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_83_o |         Local|      |    3 |  0.155     |  0.695      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_91_o |         Local|      |    3 |  0.271     |  0.836      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_107_o |         Local|      |    3 |  0.244     |  0.815      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_115_o |         Local|      |    3 |  0.399     |  1.127      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_123_o |         Local|      |    3 |  0.452     |  1.036      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_69_o |         Local|      |    3 |  0.405     |  0.761      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_77_o |         Local|      |    3 |  1.079     |  1.444      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_85_o |         Local|      |    3 |  0.184     |  0.968      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_93_o |         Local|      |    3 |  0.273     |  1.081      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_109_o |         Local|      |    3 |  0.221     |  0.602      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_117_o |         Local|      |    3 |  0.393     |  0.763      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_125_o |         Local|      |    3 |  0.432     |  1.206      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_79_o |         Local|      |    3 |  0.487     |  1.048      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_87_o |         Local|      |    3 |  0.674     |  1.022      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_95_o |         Local|      |    3 |  0.235     |  1.075      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_119_o |         Local|      |    3 |  0.223     |  0.581      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|         equal_127_o |         Local|      |    3 |  0.681     |  1.153      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_89_o |         Local|      |    3 |  0.064     |  0.843      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_97_o |         Local|      |    3 |  0.089     |  0.655      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|          equal_99_o |         Local|      |    3 |  0.183     |  0.562      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|           equal_1_o |         Local|      |    3 |  0.190     |  0.761      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|           equal_3_o |         Local|      |    3 |  0.450     |  0.839      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|           equal_5_o |         Local|      |    3 |  0.204     |  0.702      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|           equal_7_o |         Local|      |    3 |  0.443     |  1.156      |
-+---------------------+--------------+------+------+------------+-------------+
-|t/o/GND_7_o_GND_7_o_ |              |      |      |            |             |
-|           equal_9_o |         Local|      |    3 |  0.591     |  1.179      |
+|           clk_BUFGP | BUFGMUX_X2Y11| No   |  513 |  0.689     |  2.080      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -343,8 +151,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH | SETUP       |     8.359ns|    11.641ns|       0|           0
-   50%                                      | HOLD        |     0.447ns|            |       0|           0
+  TS_clk = PERIOD TIMEGRP "clk" 50 MHz HIGH | SETUP       |    10.043ns|     9.957ns|       0|           0
+   50%                                      | HOLD        |     0.413ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -355,10 +163,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 9 secs 
-Total CPU time to PAR completion (all processors): 13 secs 
+Total REAL time to PAR completion: 8 secs 
+Total CPU time to PAR completion (all processors): 12 secs 
 
-Peak Memory Usage:  290 MB
+Peak Memory Usage:  301 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
