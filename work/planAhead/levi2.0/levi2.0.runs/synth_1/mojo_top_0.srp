@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> Reading design: mojo_top_0.prj
 
@@ -76,10 +76,11 @@ Elaborating module <top_1>.
 
 Elaborating module <signal_shift_2>.
 WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/signal_shift_2.v" Line 19: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:189 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/top_1.v" Line 80: Size mismatch in connection of port <delay>. Formal port size is 11-bit while actual signal size is 32-bit.
 
 Elaborating module <mySPI_3>.
-WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 15: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 17: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 16: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 20: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <shift_register_4>.
 WARNING:HDLCompiler:413 - "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/shift_register_4.v" Line 359: Result of 7-bit expression is truncated to fit in 6-bit target.
@@ -107,21 +108,23 @@ Synthesizing Unit <signal_shift_2>.
     Found 1-bit register for signal <tmp0>.
     Found 1-bit register for signal <tmp1>.
     Found 12-bit register for signal <counter>.
-    Found 13-bit adder for signal <n0027> created at line 19.
+    Found 13-bit adder for signal <n0030> created at line 19.
     Found 12-bit adder for signal <delay[10]_GND_3_o_add_3_OUT> created at line 22.
     Found 13-bit adder for signal <delay[10]_GND_3_o_add_5_OUT> created at line 26.
-    Found 1-bit adder for signal <clk_out> created at line 45.
-    Found 1x1-bit multiplier for signal <n0031> created at line 45.
-    Found 1x1-bit multiplier for signal <n0032> created at line 45.
+    Found 1-bit adder for signal <clk_out> created at line 49.
+    Found 1x1-bit multiplier for signal <n0034> created at line 49.
+    Found 1x1-bit multiplier for signal <n0035> created at line 49.
     Found 12-bit comparator not equal for signal <delay[10]_counter[11]_equal_3_o> created at line 21
     Found 32-bit comparator not equal for signal <delay[10]_counter[11]_equal_5_o> created at line 22
     Found 32-bit comparator not equal for signal <delay[10]_counter[11]_equal_7_o> created at line 26
-    Found 32-bit comparator greater for signal <GND_3_o_delay[10]_LessThan_11_o> created at line 45
+    Found 32-bit comparator greater for signal <delay[10]_GND_3_o_LessThan_10_o> created at line 43
+    Found 32-bit comparator greater for signal <GND_3_o_delay[10]_LessThan_12_o> created at line 49
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   4 Adder/Subtractor(s).
 	inferred  14 D-type flip-flop(s).
-	inferred   4 Comparator(s).
+	inferred   5 Comparator(s).
+	inferred   1 Multiplexer(s).
 Unit <signal_shift_2> synthesized.
 
 Synthesizing Unit <mySPI_3>.
@@ -139,9 +142,9 @@ Synthesizing Unit <mySPI_3>.
     Found 4-bit register for signal <counter>.
     Found 6-bit register for signal <dataCounter>.
     Found 1-bit register for signal <data<10>>.
-    Found 4-bit adder for signal <counter[3]_GND_5_o_add_2_OUT> created at line 15.
-    Found 6-bit adder for signal <dataCounter[5]_GND_5_o_add_4_OUT> created at line 17.
-    Found 4-bit comparator greater for signal <PWR_4_o_counter[3]_LessThan_7_o> created at line 18
+    Found 4-bit adder for signal <counter[3]_GND_5_o_add_2_OUT> created at line 16.
+    Found 6-bit adder for signal <dataCounter[5]_GND_5_o_add_4_OUT> created at line 20.
+    Found 4-bit comparator greater for signal <PWR_4_o_counter[3]_LessThan_4_o> created at line 18
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  21 D-type flip-flop(s).
@@ -163,6 +166,7 @@ Unit <shift_register_4> synthesized.
 
 Synthesizing Unit <data_organize_5>.
     Related source file is "C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/data_organize_5.v".
+    Found 11-bit register for signal <data1>.
     Found 11-bit register for signal <data2>.
     Found 11-bit register for signal <data3>.
     Found 11-bit register for signal <data4>.
@@ -226,37 +230,40 @@ Synthesizing Unit <data_organize_5>.
     Found 11-bit register for signal <data62>.
     Found 11-bit register for signal <data63>.
     Found 11-bit register for signal <data64>.
-    Found 11-bit register for signal <data1>.
+    Found 6-bit register for signal <dataPrev>.
+    Found 6-bit comparator equal for signal <n0001> created at line 140
     Summary:
-	inferred 704 D-type flip-flop(s).
+	inferred 710 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <data_organize_5> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Multipliers                                          : 128
- 1x1-bit multiplier                                    : 128
-# Adders/Subtractors                                   : 259
- 1-bit adder                                           : 64
- 12-bit adder                                          : 64
- 13-bit adder                                          : 128
+# Multipliers                                          : 130
+ 1x1-bit multiplier                                    : 130
+# Adders/Subtractors                                   : 263
+ 1-bit adder                                           : 65
+ 12-bit adder                                          : 65
+ 13-bit adder                                          : 130
  4-bit adder                                           : 1
  6-bit adder                                           : 2
-# Registers                                            : 273
- 1-bit register                                        : 141
+# Registers                                            : 277
+ 1-bit register                                        : 143
  11-bit register                                       : 64
- 12-bit register                                       : 64
+ 12-bit register                                       : 65
  4-bit register                                        : 1
- 6-bit register                                        : 2
+ 6-bit register                                        : 3
  8-bit register                                        : 1
-# Comparators                                          : 257
- 12-bit comparator not equal                           : 64
- 32-bit comparator greater                             : 64
- 32-bit comparator not equal                           : 128
+# Comparators                                          : 327
+ 12-bit comparator not equal                           : 65
+ 32-bit comparator greater                             : 130
+ 32-bit comparator not equal                           : 130
  4-bit comparator greater                              : 1
-# Multiplexers                                         : 16
- 1-bit 2-to-1 multiplexer                              : 9
+ 6-bit comparator equal                                : 1
+# Multiplexers                                         : 81
+ 1-bit 2-to-1 multiplexer                              : 74
  8-bit 2-to-1 multiplexer                              : 7
 
 =========================================================================
@@ -277,31 +284,32 @@ Unit <shift_register_4> synthesized (advanced).
 
 Synthesizing (advanced) Unit <signal_shift_2>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
-	Multiplier <Mmult_n0031> in block <signal_shift_2> and adder/subtractor <Madd_clk_out> in block <signal_shift_2> are combined into a MAC<Maddsub_n0031>.
+	Multiplier <Mmult_n0034> in block <signal_shift_2> and adder/subtractor <Madd_clk_out> in block <signal_shift_2> are combined into a MAC<Maddsub_n0034>.
 Unit <signal_shift_2> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# MACs                                                 : 64
- 1x1-to-1-bit MAC                                      : 64
-# Multipliers                                          : 64
- 1x1-bit multiplier                                    : 64
-# Adders/Subtractors                                   : 128
- 12-bit adder                                          : 64
- 13-bit adder                                          : 64
-# Counters                                             : 67
- 12-bit up counter                                     : 64
+# MACs                                                 : 65
+ 1x1-to-1-bit MAC                                      : 65
+# Multipliers                                          : 65
+ 1x1-bit multiplier                                    : 65
+# Adders/Subtractors                                   : 130
+ 12-bit adder                                          : 65
+ 13-bit adder                                          : 65
+# Counters                                             : 68
+ 12-bit up counter                                     : 65
  4-bit up counter                                      : 1
  6-bit up counter                                      : 2
-# Registers                                            : 853
- Flip-Flops                                            : 853
-# Comparators                                          : 257
- 12-bit comparator not equal                           : 64
- 32-bit comparator greater                             : 64
- 32-bit comparator not equal                           : 128
+# Registers                                            : 861
+ Flip-Flops                                            : 861
+# Comparators                                          : 327
+ 12-bit comparator not equal                           : 65
+ 32-bit comparator greater                             : 130
+ 32-bit comparator not equal                           : 130
  4-bit comparator greater                              : 1
+ 6-bit comparator equal                                : 1
 # Multiplexers                                         : 16
  1-bit 2-to-1 multiplexer                              : 9
  8-bit 2-to-1 multiplexer                              : 7
@@ -320,13 +328,24 @@ Optimizing unit <signal_shift_2> ...
 
 Optimizing unit <shift_register_4> ...
 
-Optimizing unit <data_organize_5> ...
-
 Optimizing unit <mySPI_3> ...
+
+Optimizing unit <data_organize_5> ...
+WARNING:Xst:2677 - Node <t/t/tmp1> of sequential type is unconnected in block <mojo_top_0>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 92.
+Found area constraint ratio of 100 (+ 0) on block mojo_top_0, actual ratio is 106.
+Optimizing block <mojo_top_0> to meet ratio 100 (+ 0) of 1430 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <mojo_top_0>, final ratio is 106.
+FlipFlop t/o/dataPrev_2 has been replicated 1 time(s)
+FlipFlop t/o/dataPrev_4 has been replicated 1 time(s)
+FlipFlop t/spi/dataCounter_0 has been replicated 1 time(s)
+FlipFlop t/spi/dataCounter_1 has been replicated 14 time(s)
+FlipFlop t/spi/dataCounter_2 has been replicated 17 time(s)
+FlipFlop t/spi/dataCounter_3 has been replicated 18 time(s)
+FlipFlop t/spi/dataCounter_4 has been replicated 2 time(s)
+FlipFlop t/spi/dataCounter_5 has been replicated 3 time(s)
 
 Final Macro Processing ...
 
@@ -334,8 +353,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1637
- Flip-Flops                                            : 1637
+# Registers                                            : 1713
+ Flip-Flops                                            : 1713
 
 =========================================================================
 
@@ -358,29 +377,29 @@ Top Level Output File Name         : mojo_top_0.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 5819
-#      GND                         : 64
-#      INV                         : 132
-#      LUT1                        : 704
-#      LUT2                        : 196
-#      LUT3                        : 296
-#      LUT4                        : 463
-#      LUT5                        : 470
-#      LUT6                        : 1572
-#      MUXCY                       : 1024
-#      MUXF7                       : 66
-#      VCC                         : 64
-#      XORCY                       : 768
-# FlipFlops/Latches                : 1637
-#      FDE                         : 719
-#      FDE_1                       : 11
-#      FDR                         : 843
-#      FDS                         : 64
+# BELS                             : 8486
+#      GND                         : 65
+#      INV                         : 137
+#      LUT1                        : 715
+#      LUT2                        : 262
+#      LUT3                        : 1061
+#      LUT4                        : 551
+#      LUT5                        : 1355
+#      LUT6                        : 2460
+#      MUXCY                       : 1035
+#      VCC                         : 65
+#      XORCY                       : 780
+# FlipFlops/Latches                : 1713
+#      FD                          : 832
+#      FDE                         : 70
+#      FDE_1                       : 723
+#      FDR                         : 87
+#      FDRE                        : 1
 # Clock Buffers                    : 2
 #      BUFGP                       : 2
-# IO Buffers                       : 11
+# IO Buffers                       : 12
 #      IBUF                        : 1
-#      OBUF                        : 10
+#      OBUF                        : 11
 
 Device utilization summary:
 ---------------------------
@@ -389,23 +408,25 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1637  out of  11440    14%  
- Number of Slice LUTs:                 3833  out of   5720    67%  
-    Number used as Logic:              3833  out of   5720    67%  
+ Number of Slice Registers:            1713  out of  11440    14%  
+ Number of Slice LUTs:                 6541  out of   5720   114% (*) 
+    Number used as Logic:              6541  out of   5720   114% (*) 
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4568
-   Number with an unused Flip Flop:    2931  out of   4568    64%  
-   Number with an unused LUT:           735  out of   4568    16%  
-   Number of fully used LUT-FF pairs:   902  out of   4568    19%  
-   Number of unique control sets:       145
+ Number of LUT Flip Flop pairs used:   6619
+   Number with an unused Flip Flop:    4906  out of   6619    74%  
+   Number with an unused LUT:            78  out of   6619     1%  
+   Number of fully used LUT-FF pairs:  1635  out of   6619    24%  
+   Number of unique control sets:       153
 
 IO Utilization: 
- Number of IOs:                          13
- Number of bonded IOBs:                  13  out of    102    12%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    102    13%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -428,8 +449,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 1616  |
-sClk                               | BUFGP                  | 21    |
+clk                                | BUFGP                  | 925   |
+sClk                               | BUFGP                  | 788   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -440,7 +461,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.570ns (Maximum Frequency: 179.533MHz)
+   Minimum period: 4.999ns (Maximum Frequency: 200.040MHz)
    Minimum input arrival time before clock: 2.440ns
    Maximum output required time after clock: 4.162ns
    Maximum combinational path delay: No path found
@@ -451,53 +472,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 5.570ns (frequency: 179.533MHz)
-  Total number of paths / destination ports: 38424 / 1824
+  Clock period: 4.999ns (frequency: 200.040MHz)
+  Total number of paths / destination ports: 21442 / 954
 -------------------------------------------------------------------------
-Delay:               5.570ns (Levels of Logic = 6)
-  Source:            t/o/data10_7 (FF)
+Delay:               4.999ns (Levels of Logic = 4)
+  Source:            t/a10/counter_8 (FF)
   Destination:       t/a10/tmp0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: t/o/data10_7 to t/a10/tmp0
+  Data Path: t/a10/counter_8 to t/a10/tmp0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              8   0.525   1.220  data10_7 (data10_7)
-     end scope: 't/o:signal10<7>'
-     begin scope: 't/a10:delay<7>'
-     LUT4:I0->O            1   0.254   1.112  Madd_delay[10]_GND_3_o_add_3_OUT_xor<9>11_SW1 (N1493)
-     LUT6:I1->O            3   0.254   0.766  _n00573 (_n00573)
-     LUT6:I5->O            1   0.254   0.000  _n00579_SW2_G (N1997)
-     MUXF7:I1->O           1   0.175   0.682  _n00579_SW2 (N1527)
-     LUT6:I5->O            1   0.254   0.000  tmp0_rstpot (tmp0_rstpot)
+     FD:C->Q               6   0.525   1.104  counter_8 (counter_8)
+     LUT6:I3->O            1   0.235   0.910  _n00621 (_n00621)
+     LUT6:I3->O            2   0.235   0.726  _n00625 (_n00625)
+     LUT5:I4->O            1   0.254   0.682  _n006210 (_n0062)
+     LUT5:I4->O            1   0.254   0.000  tmp0_rstpot (tmp0_rstpot)
      FDR:D                     0.074          tmp0
     ----------------------------------------
-    Total                      5.570ns (1.790ns logic, 3.780ns route)
-                                       (32.1% logic, 67.9% route)
+    Total                      4.999ns (1.577ns logic, 3.422ns route)
+                                       (31.5% logic, 68.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sClk'
-  Clock period: 3.552ns (frequency: 281.532MHz)
-  Total number of paths / destination ports: 105 / 31
+  Clock period: 4.910ns (frequency: 203.664MHz)
+  Total number of paths / destination ports: 15338 / 1565
 -------------------------------------------------------------------------
-Delay:               3.552ns (Levels of Logic = 1)
-  Source:            t/spi/counter_3 (FF)
-  Destination:       t/spi/counter_3 (FF)
+Delay:               4.910ns (Levels of Logic = 2)
+  Source:            t/o/dataPrev_3 (FF)
+  Destination:       t/o/dataPrev_5 (FF)
   Source Clock:      sClk falling
   Destination Clock: sClk falling
 
-  Data Path: t/spi/counter_3 to t/spi/counter_3
+  Data Path: t/o/dataPrev_3 to t/o/dataPrev_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             13   0.525   1.326  counter_3 (counter_3)
-     LUT3:I0->O           10   0.235   1.007  PWR_4_o_counter[3]_LessThan_7_o1 (PWR_4_o_counter[3]_LessThan_7_o)
-     FDR:R                     0.459          counter_0
+     FDE_1:C->Q           32   0.525   1.950  dataPrev_3 (dataPrev_3)
+     LUT6:I1->O            1   0.254   0.682  n000162_1 (n000162)
+     LUT2:I1->O            8   0.254   0.943  n0001_inv1 (n0001_inv)
+     FDE_1:CE                  0.302          dataPrev_0
     ----------------------------------------
-    Total                      3.552ns (1.219ns logic, 2.333ns route)
-                                       (34.3% logic, 65.7% route)
+    Total                      4.910ns (1.335ns logic, 3.575ns route)
+                                       (27.2% logic, 72.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sClk'
@@ -522,7 +541,7 @@ Offset:              2.440ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 11 / 11
 -------------------------------------------------------------------------
 Offset:              4.162ns (Levels of Logic = 2)
   Source:            t/b/oLatch (FF)
@@ -551,8 +570,8 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    5.570|         |         |         |
-sClk           |         |    4.550|         |         |
+clk            |    4.999|         |         |         |
+sClk           |         |    8.003|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sClk
@@ -560,20 +579,20 @@ Clock to Setup on destination clock sClk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sClk           |         |         |    3.552|         |
+sClk           |         |         |    4.910|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.26 secs
+Total CPU time to Xst completion: 8.61 secs
  
 --> 
 
-Total memory usage is 235088 kilobytes
+Total memory usage is 237072 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

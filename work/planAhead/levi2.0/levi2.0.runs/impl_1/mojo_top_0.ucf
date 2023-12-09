@@ -38,9 +38,10 @@ NET "data[6]" IOSTANDARD = LVTTL;
 NET "data[7]" LOC = P2;
 NET "data[7]" IOSTANDARD = LVTTL;
 
-
 NET "serialIn" LOC = P10;
 NET "serialIn" IOSTANDARD = LVTTL;
 NET "sClk" LOC = P51;
 NET "sClk" IOSTANDARD = LVTTL;
 
+NET "test" LOC = P9;
+NET "test" IOSTANDARD = LVTTL;

@@ -4,10 +4,11 @@ module mojo_top(
     input sClk,
     output latch,
     output clock,
+    output test,
     output [7:0]data
     );
 
-  top t(clk, serialIn, sClk, latch, clock, data);
+  top t(clk, serialIn, sClk, latch, clock, test, data);
   /*wire[63:0] top;
   //wire[63:0] botom = 0;
   wire[767:0] data;*/

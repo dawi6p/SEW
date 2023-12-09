@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Dec 04 19:01:22 2023
+Sat Dec 09 23:05:03 2023
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -28,7 +28,7 @@ Pinout by Pin Number:
 |P6        |           |IOBM     |IO_L52P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P7        |           |IOBS     |IO_L51N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P8        |           |IOBM     |IO_L51P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
-|P9        |           |IOBS     |IO_L50N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
+|P9        |test       |IOB      |IO_L50N_3                 |OUTPUT   |LVTTL      |3             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P10       |serialIn   |IOB      |IO_L50P_3                 |INPUT    |LVTTL      |3             |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
 |P11       |           |IOBS     |IO_L49N_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P12       |           |IOBM     |IO_L49P_3                 |UNUSED   |           |3             |          |         |           |         |         |          |           |                |

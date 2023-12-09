@@ -40,6 +40,10 @@ module signal_shift (
        tmp1 <= 1;
        counter <= 0;
      end
+     if(delay > TICK_WAIT) begin
+       tmp0 <= 0;
+       tmp1 <= 0;
+     end
    end
 
    assign clk_out = tmp1 * (delay < 0) + tmp0 * (delay >= 0);

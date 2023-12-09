@@ -131,200 +131,208 @@ module data_organize_5 (
   reg [10:0]data62;
   reg [10:0]data63;
   reg [10:0]data64;
-
+  
+  reg [5:0] dataPrev = 63;
+  
   /* Sequential Logic */
-  always @(posedge clk) begin
-    if(dataChange == 0) begin
-      data1 <= data;
-    end
-    if(dataChange == 1) begin
-      data2 <= data;
-    end
-    if(dataChange == 2) begin
-      data3 <= data;
-    end
-    if(dataChange == 3) begin
-      data4= data;
-    end
-    if(dataChange == 4) begin
-      data5= data;
-    end
-    if(dataChange == 5) begin
-      data6= data;
-    end
-    if(dataChange == 6) begin
-      data7= data;
-    end
-    if(dataChange == 7) begin
-      data8= data;
-    end
-    if(dataChange == 8) begin
-      data9= data;
-    end
-    if(dataChange == 9) begin
-      data10= data;
-    end
-    if(dataChange == 10) begin
-      data11= data;
-    end
-    if(dataChange == 11) begin
-      data12= data;
-    end
-    if(dataChange == 12) begin
-      data13= data;
-    end
-    if(dataChange == 13) begin
-      data14= data;
-    end
-    if(dataChange == 14) begin
-      data15= data;
-    end
-    if(dataChange == 15) begin
-      data16= data;
-    end
-    if(dataChange == 16) begin
-      data17= data;
-    end
-    if(dataChange == 17) begin
-      data18= data;
-    end
-    if(dataChange == 18) begin
-      data19= data;
-    end
-    if(dataChange == 19) begin
-      data20= data;
-    end
-    if(dataChange == 20) begin
-      data21= data;
-    end
-    if(dataChange == 21) begin
-      data22= data;
-    end
-    if(dataChange == 22) begin
-      data23= data;
-    end
-    if(dataChange == 23) begin
-      data24= data;
-    end
-    if(dataChange == 24) begin
-      data25= data;
-    end
-    if(dataChange == 25) begin
-      data26= data;
-    end
-    if(dataChange == 26) begin
-      data27= data;
-    end
-    if(dataChange == 27) begin
-      data28= data;
-    end
-    if(dataChange == 28) begin
-      data29= data;
-    end
-    if(dataChange == 29) begin
-      data30= data;
-    end
-    if(dataChange == 30) begin
-      data31= data;
-    end
-    if(dataChange == 31) begin
-      data32= data;
-    end
-    if(dataChange == 32) begin
-      data33= data;
-    end
-    if(dataChange == 33) begin
-      data34= data;
-    end
-    if(dataChange == 34) begin
-      data35= data;
-    end
-    if(dataChange == 35) begin
-      data36= data;
-    end
-    if(dataChange == 36) begin
-      data37= data;
-    end
-    if(dataChange == 37) begin
-      data38= data;
-    end
-    if(dataChange == 38) begin
-      data39= data;
-    end
-    if(dataChange == 39) begin
-      data40= data;
-    end
-    if(dataChange == 40) begin
-      data41= data;
-    end
-    if(dataChange == 41) begin
-      data42= data;
-    end
-    if(dataChange == 42) begin
-      data43= data;
-    end
-    if(dataChange == 43) begin
-      data44= data;
-    end
-    if(dataChange == 44) begin
-      data45= data;
-    end
-    if(dataChange == 45) begin
-      data46= data;
-    end
-    if(dataChange == 46) begin
-      data47= data;
-    end
-    if(dataChange == 47) begin
-      data48= data;
-    end
-    if(dataChange == 48) begin
-      data49= data;
-    end
-    if(dataChange == 49) begin
-      data50= data;
-    end
-    if(dataChange == 50) begin
-      data51= data;
-    end
-    if(dataChange == 51) begin
-      data52= data;
-    end
-    if(dataChange == 52) begin
-      data53= data;
-    end
-    if(dataChange == 53) begin
-      data54= data;
-    end
-    if(dataChange == 54) begin
-      data55= data;
-    end
-    if(dataChange == 55) begin
-      data56= data;
-    end
-    if(dataChange == 56) begin
-      data57= data;
-    end
-    if(dataChange == 57) begin
-      data58= data;
-    end
-    if(dataChange == 58) begin
-      data59= data;
-    end
-    if(dataChange == 59) begin
-      data60= data;
-    end
-    if(dataChange == 60) begin
-      data61= data;
-    end
-    if(dataChange == 61) begin
-      data62= data;
-    end
-    if(dataChange == 62) begin
-      data63= data;
-    end
-    if(dataChange == 63) begin
-      data64= data;
+  always @(negedge clk) begin
+  
+  if(dataPrev != dataChange) begin
+      
+      dataPrev <= dataChange;
+      
+      if(dataChange == 0) begin
+        data1 <= data;
+      end
+      if(dataChange == 1) begin
+        data2 <= data;
+      end
+      if(dataChange == 2) begin
+        data3 <= data;
+      end
+      if(dataChange == 3) begin
+        data4= data;
+      end
+      if(dataChange == 4) begin
+        data5= data;
+      end
+      if(dataChange == 5) begin
+        data6= data;
+      end
+      if(dataChange == 6) begin
+        data7= data;
+      end
+      if(dataChange == 7) begin
+        data8= data;
+      end
+      if(dataChange == 8) begin
+        data9= data;
+      end
+      if(dataChange == 9) begin
+        data10= data;
+      end
+      if(dataChange == 10) begin
+        data11= data;
+      end
+      if(dataChange == 11) begin
+        data12= data;
+      end
+      if(dataChange == 12) begin
+        data13= data;
+      end
+      if(dataChange == 13) begin
+        data14= data;
+      end
+      if(dataChange == 14) begin
+        data15= data;
+      end
+      if(dataChange == 15) begin
+        data16= data;
+      end
+      if(dataChange == 16) begin
+        data17= data;
+      end
+      if(dataChange == 17) begin
+        data18= data;
+      end
+      if(dataChange == 18) begin
+        data19= data;
+      end
+      if(dataChange == 19) begin
+        data20= data;
+      end
+      if(dataChange == 20) begin
+        data21= data;
+      end
+      if(dataChange == 21) begin
+        data22= data;
+      end
+      if(dataChange == 22) begin
+        data23= data;
+      end
+      if(dataChange == 23) begin
+        data24= data;
+      end
+      if(dataChange == 24) begin
+        data25= data;
+      end
+      if(dataChange == 25) begin
+        data26= data;
+      end
+      if(dataChange == 26) begin
+        data27= data;
+      end
+      if(dataChange == 27) begin
+        data28= data;
+      end
+      if(dataChange == 28) begin
+        data29= data;
+      end
+      if(dataChange == 29) begin
+        data30= data;
+      end
+      if(dataChange == 30) begin
+        data31= data;
+      end
+      if(dataChange == 31) begin
+        data32= data;
+      end
+      if(dataChange == 32) begin
+        data33= data;
+      end
+      if(dataChange == 33) begin
+        data34= data;
+      end
+      if(dataChange == 34) begin
+        data35= data;
+      end
+      if(dataChange == 35) begin
+        data36= data;
+      end
+      if(dataChange == 36) begin
+        data37= data;
+      end
+      if(dataChange == 37) begin
+        data38= data;
+      end
+      if(dataChange == 38) begin
+        data39= data;
+      end
+      if(dataChange == 39) begin
+        data40= data;
+      end
+      if(dataChange == 40) begin
+        data41= data;
+      end
+      if(dataChange == 41) begin
+        data42= data;
+      end
+      if(dataChange == 42) begin
+        data43= data;
+      end
+      if(dataChange == 43) begin
+        data44= data;
+      end
+      if(dataChange == 44) begin
+        data45= data;
+      end
+      if(dataChange == 45) begin
+        data46= data;
+      end
+      if(dataChange == 46) begin
+        data47= data;
+      end
+      if(dataChange == 47) begin
+        data48= data;
+      end
+      if(dataChange == 48) begin
+        data49= data;
+      end
+      if(dataChange == 49) begin
+        data50= data;
+      end
+      if(dataChange == 50) begin
+        data51= data;
+      end
+      if(dataChange == 51) begin
+        data52= data;
+      end
+      if(dataChange == 52) begin
+        data53= data;
+      end
+      if(dataChange == 53) begin
+        data54= data;
+      end
+      if(dataChange == 54) begin
+        data55= data;
+      end
+      if(dataChange == 55) begin
+        data56= data;
+      end
+      if(dataChange == 56) begin
+        data57= data;
+      end
+      if(dataChange == 57) begin
+        data58= data;
+      end
+      if(dataChange == 58) begin
+        data59= data;
+      end
+      if(dataChange == 59) begin
+        data60= data;
+      end
+      if(dataChange == 60) begin
+        data61= data;
+      end
+      if(dataChange == 61) begin
+        data62= data;
+      end
+      if(dataChange == 62) begin
+        data63= data;
+      end
+      if(dataChange == 63) begin
+        data64= data;
+      end
     end
   end
   

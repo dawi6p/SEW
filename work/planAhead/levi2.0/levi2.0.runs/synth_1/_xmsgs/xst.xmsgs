@@ -8,13 +8,25 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/signal_shift_2.v" Line 19: Result of <arg fmt="%d" index="1">13</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">12</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 15: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="189" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/top_1.v" Line 80: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">delay</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 17: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 16: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/mySPI_3.v" Line 20: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:/Users/Nkiogotonieobchodzi/Desktop/levi2.0/work/planAhead/levi2.0/levi2.0.srcs/sources_1/imports/verilog/shift_register_4.v" Line 359: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">6</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">t/t/tmp1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mojo_top_0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2254" delta="new" >Area constraint could not be met for block &lt;<arg fmt="%s" index="1">mojo_top_0</arg>&gt;, final ratio is <arg fmt="%i" index="2">106</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
 </msg>
 
 </messages>

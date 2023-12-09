@@ -4,6 +4,7 @@ module top (
     input sClk,
     output latch,
     output clock,
+    output test,
     output [7:0]data
   );
   wire[63:0] top;
@@ -76,7 +77,7 @@ module top (
   wire [10:0]dataIn;
   wire [5:0]dataInChange;
   
-  //signal_shift t  (clk, 225,  test);
+  signal_shift t (clk, 0, test);
   
   signal_shift a1  (clk, signal1,  top[0]);
   signal_shift a2  (clk, signal2,  top[1]);
@@ -147,7 +148,7 @@ module top (
   
   shift_register b(clk, top, latch, clock, data);
   
-  data_organize o(clk, dataIn, dataInChange,
+  data_organize o(sClk, dataIn, dataInChange,
                   signal1,
                   signal2,
                   signal3,
