@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Sat Dec 09 23:04:56 2023">
+  <application stringID="par" timeStamp="Sun Dec 10 12:49:27 2023">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -62,12 +62,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="8 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="12 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="7 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="10 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="9 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="12 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="8 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="11 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -86,7 +86,7 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y11"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="240.000000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="288.000000"/>
             <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.688000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.079000"/>
           </row>
@@ -95,7 +95,7 @@
             <item label="Routed" stringID="ROUTED" value="ROUTED"/>
             <item label="Resource" stringID="RESOURCE" value="BUFGMUX_X2Y12"/>
             <item label="Locked" stringID="LOCKED" value="No"/>
-            <item dataType="float" label="Fanout" stringID="FANOUT" value="235.000000"/>
+            <item dataType="float" label="Fanout" stringID="FANOUT" value="361.000000"/>
             <item dataType="float" label="Net Skew(ns)" stringID="NET_SKEW" value="0.689000"/>
             <item dataType="float" label="Max Delay(ns)" stringID="MAX_DELAY" value="2.080000"/>
           </row>
@@ -1142,7 +1142,7 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Sat Dec 09 23:04:56 2023">
+  <application stringID="Par" timeStamp="Sun Dec 10 12:49:27 2023">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -1192,16 +1192,16 @@
     </section>
     <task label="Device Utilization Summary" stringID="PAR_DEVICE_UTLIZATION">
       <section stringID="PAR_SLICE_REPORTING">
-        <item AVAILABLE="11440" dataType="int" label="Number of Slice Registers" stringID="PAR_SLICE_REGISTERS" value="1703">
-          <item dataType="int" stringID="PAR_NUM_SLICE_FF" value="1703"/>
+        <item AVAILABLE="11440" dataType="int" label="Number of Slice Registers" stringID="PAR_SLICE_REGISTERS" value="1832">
+          <item dataType="int" stringID="PAR_NUM_SLICE_FF" value="1832"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCH" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHLOGIC" value="0"/>
         </item>
-        <item AVAILABLE="5720" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="5568">
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="652"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="3750"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="1101"/>
+        <item AVAILABLE="5720" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="4669">
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="650"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="3170"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="784"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ANDO6" value="0"/>
@@ -1221,15 +1221,15 @@
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="65"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="1430" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="1412">
+        <item AVAILABLE="1430" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="1337">
           <item AVAILABLE="355" dataType="int" stringID="PAR_NUM_SLICEL" value="323"/>
           <item AVAILABLE="360" dataType="int" stringID="PAR_NUM_SLICEM" value="0"/>
-          <item AVAILABLE="715" dataType="int" stringID="PAR_NUM_SLICEX" value="1089"/>
+          <item AVAILABLE="715" dataType="int" stringID="PAR_NUM_SLICEX" value="1014"/>
         </item>
-        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="5568">
-          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="4253"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="0"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="1315"/>
+        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="4702">
+          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="2874"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="33"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="1795"/>
         </item>
       </section>
       <section stringID="PAR_IOB_REPORTING">

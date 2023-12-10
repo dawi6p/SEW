@@ -6,7 +6,7 @@ module mySPI_3 (
   );
   
   reg [10:0] data;
-  //reg [10:0] dataOut;
+  //reg [10:0] dataOut = 0;
   reg [3:0] counter = 0;
   reg [5:0]dataCounter = 63;
   

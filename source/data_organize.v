@@ -132,14 +132,20 @@ module data_organize (
   reg [10:0]data63;
   reg [10:0]data64;
   
-  reg [5:0] dataPrev = 63;
+  //reg [5:0] dataPrev = 63;
+  reg [3:0] counter = 0;
   
   /* Sequential Logic */
-  always @(negedge clk) begin
+  always @(posedge clk) begin
   
-  if(dataPrev != dataChange) begin
+  counter <= counter+1;
+    
+  if(counter > 9) begin 
+      counter <= 0;
+  
+  //if(dataPrev != dataChange) begin
       
-      dataPrev <= dataChange;
+      //dataPrev <= dataChange;
       
       if(dataChange == 0) begin
         data1 <= data;
