@@ -75,6 +75,14 @@ private:
 public:
     transduster piezo_xyz[N];
     point p;
+    int corrections[N] =  { 250, 360, 360, 380, 330, 250, 465, 250,
+                            250, 380, 470, 380, 520, 350, 350, 280,
+                            320, 300, 320, 450, 450, 365, 430, 350,
+                            350, 460, 350, 540, 520, 320, 360, 600,
+                            350, 350, 380, 520, 500, 600, 400, 350,
+                            430, 370, 500, 350, -600, 360, 390, 380,
+                            260, 330, 285, 400, -540, 430, 380, 570,
+                            390, 290, 300, 340, 400, 280, 400, 380, };
 
     transArray(transduster _piezo_xyz[], point p, int dataPin, int clkPin)
     {
@@ -153,12 +161,12 @@ public:
     double normalizePhase(double phase)
     {
         //phase /= M_PI;
-        phase = fmod(phase, M_PI);
-        /*while (-2 > phase && phase < 2)
+        //phase = fmod(phase, M_PI);
+        while (-2 > phase && phase < 2)
         {
             phase = fmod(phase, 2);
         }
-        if (phase < 0) phase = 2 + phase;*/
+        if (phase < 0) phase = 2 + phase;
         
 
         return phase;
@@ -182,9 +190,18 @@ public:
         //digitalWrite(clk_pin, 1);
     }
 
+    int correction(int phase, int correction, int n)
+    {
+        int tmp = phase + correction;
+        if (tmp > n) tmp -= n;
+        if (tmp < -n) tmp += n;
+
+        return tmp;
+    }
+
     void sendDataPacket()
     {
-        for (int i = 0; i < N; i++) mySPI(piezo_xyz[i].map_phase_on_int(625), 11);
+        for (int i = 0; i < N; i++) mySPI(correction(piezo_xyz[i].map_phase_on_int(625), corrections[i], 625), 11);
     }
 
     void set_trap_twin(double angle) {
@@ -287,9 +304,12 @@ int main()
         //to DO: zaimplementowac inne rodzaje pulapek,
         //       umorzliwic zmiane inkrementu,
         system("cls");
+
         for (int i = 0; i < N; i++)
         {
-            cout << squareArray.piezo_xyz[i].phase << ", ";
+            //cout << squareArray.piezo_xyz[i].phase << ", ";
+            cout << squareArray.piezo_xyz[i].map_phase_on_int(625) << ", ";
+            //cout << squareArray.correction(squareArray.piezo_xyz[i].map_phase_on_int(625), squareArray.corrections[i], 625) << ", ";
             if (i % 8 == 7) cout << "\n";
         }
         cout << "\nx: " << squareArray.p.x << ",y: " << squareArray.p.y << ",z: " << squareArray.p.z << endl;
